@@ -1,22 +1,23 @@
 # Evidence Huddle — Day 18
 
 **Nhóm:** cuong
-**Thành viên:** Lê Quang Huy (2A202601821), Đàm Việt Cường (2A202601566), Trần Đức Bảo (2A202601472)
+**Thành viên:** Lê Quang Huy (2A202601821), Đàm Việt Cường (2A202601566), Trần Đức Bảo (2A202601472), Hoàng Minh Quân (2A202601574)
 **Case B** — AI Notes: Personal Learning Notes
 
 ## Nguồn
 
-Nhóm ba người. Hiện có **hai** buổi phỏng vấn độc lập, đều ngày 17/08/2026.
+Nhóm bốn người. Hiện có **hai** buổi phỏng vấn độc lập, đều ngày 17/08/2026.
 
 | Thành viên | Practice Note | Nội dung đã ghi nhận |
 |---|---|---|
 | Lê Quang Huy — 2A202601821 | Có. Interviewee: Phạm Duy Hoàn — 2026A201378. 4'30". Có transcript nguyên văn để đối chiếu. | Ghi chú lúc xem bài giảng: take note chỗ tính toán và từ khó, giảng nhanh thì chụp ảnh slide. Ôn vào tối trước hôm học môn đó. Chỗ không hiểu thì gửi ảnh hỏi AI giải thích. Bỏ bài theo mục tiêu điểm. Không nêu được hậu quả cụ thể — interviewer không hỏi tới. |
 | Đàm Việt Cường — 2A202601566 | Có. Interviewee: Trần Thị Hoa Mai — 01317. 5'10". Mới có exact quote, chưa có transcript đầy đủ. | Chuyển slide VLearn sang iPad viết tay, đồng thời gõ Notepad cho ý quan trọng. Ôn trên iPad chỉ đọc tuần tự được, không đảo kiến thức lên để tự dò. Muốn tự làm quiz nhưng tổng hợp từ ghi chú tay quá tốn công. Notepad hay thất lạc, quên Ctrl+S thì mất. |
 | Trần Đức Bảo — 2A202601472 | **Chưa có.** Chưa thực hiện buổi phỏng vấn nào; đã tham gia các phần khác của bài. | Ở buổi huddle chọn chi tiết **#4** (Mai — ôn trên iPad chỉ đọc tuần tự được, không đảo kiến thức lên để tự dò). Đây là **chi tiết bạn ấy chọn**, không phải buổi phỏng vấn bạn ấy làm — #4 do Cường phỏng vấn Mai mà ra. |
+| Hoàng Minh Quân — 2A202601574 | **Chưa có.** Vắng buổi Day 17; vào Day 18, phụ trách Option D. | Không có buổi phỏng vấn riêng. Làm trên evidence nhóm đã có (Hoàn, Mai). Option D đo baseline của Hoàn: giải thích đúng một chỗ khi user chỉ vào. |
 
-Đề giả định ba Practice Note từ ba thành viên. Nhóm đủ ba người nhưng mới **hai** note, nên
-câu hỏi *"có gì lặp lại?"* trả lời được qua hai nguồn, chưa phải ba. Note thứ ba còn thiếu —
-đây là chỗ lệch so với đề, không phải chỗ đã xong.
+Đề giả định ba Practice Note từ ba thành viên. Nhóm đủ bốn người nhưng mới **hai** note, nên
+câu hỏi *"có gì lặp lại?"* trả lời được qua hai nguồn, chưa phải ba. Note của Bảo và Quân còn
+thiếu — đây là chỗ lệch so với đề, không phải chỗ đã xong.
 
 Số thứ tự chi tiết (**#1**–**#6**) dùng chung toàn tài liệu, giữ nguyên theo bảng gộp ban đầu.
 Bảng chính lấy #3, #1, #5; bảng phụ giữ #2, #4, #6.

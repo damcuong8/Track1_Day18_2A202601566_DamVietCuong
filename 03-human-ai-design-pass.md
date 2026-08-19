@@ -4,7 +4,7 @@
 **Thành viên:** Lê Quang Huy (2A202601821), Đàm Việt Cường (2A202601566), Trần Đức Bảo (2A202601472), Hoàng Minh Quân (2A202601574)
 **Case B** — AI Notes: Personal Learning Notes
 
-Nối tiếp [Chặng 2 — Ba Solution Options](02-three-solution-options.md).
+Nối tiếp [Chặng 2 — Các Solution Options](02-three-solution-options.md).
 Mọi thứ mô tả dưới đây đã dựng thật trong [prototype](prototype/index.html), không phải mô tả trên giấy.
 
 ---

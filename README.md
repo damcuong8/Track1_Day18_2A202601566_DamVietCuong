@@ -5,7 +5,7 @@ Case tiếp nối Day 17: **B — AI Notes: Personal Learning Notes**.
 
 Thành viên: Lê Quang Huy (2A202601821), Đàm Việt Cường (2A202601566), Trần Đức Bảo (2A202601472), Hoàng Minh Quân (2A202601574).
 
-Phân công option: Huy A · Cường B · Bảo C · **Quân D** (vào sau, vắng buổi hôm trước). Cột D: [03-human-ai-design-hoangminhquan.md](03-human-ai-design-hoangminhquan.md).
+Phân công option: Huy A · Cường B · Bảo C · Quân D
 
 > Không đổi case. Day 18 không tiếp tục problem interview.
 
@@ -22,10 +22,10 @@ Bốn artifact đặt cạnh nhau trước khi bắt đầu, copy nguyên văn t
 | Practice Note — Cường → Trần Thị Hoa Mai | [day17-inputs/03-practice-note-damvietcuong.md](day17-inputs/03-practice-note-damvietcuong.md) |
 | Conversation Guide cuối (chỉ để tham khảo context) | [day17-inputs/04-conversation-guide-final.md](day17-inputs/04-conversation-guide-final.md) |
 
-**Lệch so với đề:** đề nêu *ba* Practice Note từ ba thành viên. Nhóm đủ ba người nhưng mới
+**Lệch so với đề:** đề nêu *ba* Practice Note từ ba thành viên. Nhóm đủ bốn người nhưng mới
 **hai** note: Huy phỏng vấn Phạm Duy Hoàn, Cường phỏng vấn Trần Thị Hoa Mai (01317).
-Trần Đức Bảo (2A202601472) chưa thực hiện buổi phỏng vấn nào, đã tham gia các phần khác của bài; ở buổi
-huddle chọn chi tiết #4.
+Trần Đức Bảo (2A202601472) chưa thực hiện buổi phỏng vấn nào; ở buổi huddle chọn chi tiết #4.
+Hoàng Minh Quân (2A202601574) vắng Day 17, vào Day 18 phụ trách Option D, chưa có Practice Note.
 Chi tiết trong [Evidence Huddle](01-evidence-huddle.md).
 
 Tài liệu tham khảo thêm, không nằm trong bốn artifact bắt buộc:
@@ -39,7 +39,7 @@ Cường: không tự tạo được bộ câu hỏi tự kiểm tra). Ba phươ
 ## Giới hạn kết luận
 
 Practice interview Day 17 chưa đủ để chứng minh pain đã validated. Kết luận cuối bài chỉ
-được ở dạng: *"Với Hypothesis Problem này, chúng tôi đã thử ba cách giải. Tester đã làm…,
+được ở dạng: *"Với Hypothesis Problem này, chúng tôi đã thử bốn cách giải. Tester đã làm…,
 vì vậy iteration tiếp theo chúng tôi sẽ…"*
 
 Không được kết luận *"User đã xác nhận solution này đúng."*

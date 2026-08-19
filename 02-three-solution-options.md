@@ -1,4 +1,4 @@
-# Chặng 2 — Ba Solution Options (Meaningful Options)
+# Chặng 2 — Các Solution Options (Meaningful Options)
 
 **Nhóm:** cuong  
 **Thành viên:** 
@@ -15,7 +15,7 @@
 Từ **Hypothesis Problem đã chốt ở Chặng 1**:
 > **Khi** ngồi ôn lại trước buổi học kế tiếp, **người học** khó biến các mẩu ghi chú, ảnh chụp và điểm đánh dấu chưa hiểu thành một thứ dùng lại được **vì** chúng nằm rải rác trên nhiều công cụ và phải tốn công tổng hợp thủ công mới dùng được, **dẫn đến** phải đọc lại tuần tự từ đầu hoặc đẩy sang công cụ ngoài, và không đo được mình đang hổng chỗ nào.
 
-Nhóm 3 thành viên rà soát lại 5 hướng trong Solution Parking Lot từ Day 17 dưới lăng kính của dữ liệu phỏng vấn thực tế từ các nguồn:
+Nhóm bốn thành viên rà soát lại 5 hướng trong Solution Parking Lot từ Day 17 dưới lăng kính của dữ liệu phỏng vấn thực tế từ các nguồn:
 - **Nhu cầu của Hoàn (từ phỏng vấn của Huy):** Cần được **giải thích chỗ không hiểu một cách dễ hiểu nhất** theo từng ảnh chụp/slide (khớp Hướng 2).
 - **Nhu cầu của Mai (từ phỏng vấn của Cường, Bảo chọn chi tiết #4):** Cần chuyển đổi ghi chú thành **công cụ tự kiểm tra (quiz/đảo kiến thức)** và chống mất file (khớp Hướng 3, 4).
 - **Điểm chung của cả nhóm:** Đều nhận thấy người học bị nghẽn ở **chi phí chuyển đổi từ mẩu note thô thành thứ dùng lại được**.
@@ -24,7 +24,7 @@ Nhóm phân công mỗi thành viên một cơ chế, khác nhau về role split
 
 ---
 
-## 2. Thiết kế ba Solution Options & Phân công trách nhiệm
+## 2. Thiết kế các Solution Options & Phân công trách nhiệm
 
 ### 2.1. Những thành phần BẮT BUỘC GIỮ NGUYÊN (Common Context & Task)
 
@@ -38,7 +38,7 @@ Nhóm phân công mỗi thành viên một cơ chế, khác nhau về role split
 
 ---
 
-### 2.2. Bảng so sánh 3 Solution Options (Meaningful Distance)
+### 2.2. Bảng so sánh Option A / B / C (Meaningful Distance)
 
 | Thành phần | Option A (User-Led / Structured Hub) | Option B (Co-Creation / Interactive Co-Pilot) | Option C (AI-Led / Autonomous 1-Click Pack) |
 |---|---|---|---|
