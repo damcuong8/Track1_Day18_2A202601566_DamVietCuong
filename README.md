@@ -148,7 +148,12 @@ Ba chỗ hai phiên trùng nhau:
 3. **Badge nguồn và tag *"AI không chắc"* không được đọc.** Nếu đúng, Option C hiện **không có
    hàng rào nào đang hoạt động** — trái với chính lý do nhóm đặt hàng rào đó ở Chặng 3.
 
-Chỗ hai phiên mâu thuẫn: một tester dồn chú ý vào mẩu *"chưa hiểu"*, tester kia gần như bỏ qua nó.
+Chỗ hai phiên mâu thuẫn: một tester dồn chú ý vào mẩu *"chưa hiểu"*, tester kia gần như bỏ qua
+nó — nhưng tester kia đã nắm sẵn nội dung mẩu đó, nên chưa đọc được gì từ chỗ này.
+
+Cả hai tester đều **tự ghép C với D** thay vì chọn một option. Nguyên văn phiên của Huy:
+*"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm hướng chọn mục để
+mở giống option D thì hay hơn"*.
 
 ### Next Change
 

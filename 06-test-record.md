@@ -54,7 +54,7 @@ phải do người ngồi cạnh nhớ lại. Xem mục 7.
 | # | Tester nói / đề xuất | Về option nào | Dạng gì |
 |---|---|---|---|
 | T1 | Nếu làm theo B thì giảm giao diện xuống còn **hai nút**: *giữ thẻ* hoặc *sửa thẻ* | B | Đề xuất thay đổi giao diện |
-| T2 | Thích hơn một phương án **gộp C với D** | C, D | Phát biểu sở thích |
+| T2 | Thích hơn một phương án **gộp C với D**. Nguyên văn: *"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm hướng chọn mục để mở giống option D thì hay hơn"* | C, D | Phát biểu sở thích kèm đề xuất thiết kế |
 | T3 | Cơ chế mong muốn: sau khi AI tổng hợp, **AI tự xác định chỗ nào chưa logic hoặc thiếu thông tin**, **hỏi lại người dùng**, rồi **liệt kê thành từng mục**; người dùng bấm vào một mục thì AI **giải thích tường minh** phần đó | C + D | Đề xuất cơ chế |
 
 ---

@@ -32,10 +32,19 @@ không rõ ai facilitate.
 Ba chỗ hai tester độc lập làm giống nhau:
 
 **P1 — Cả hai chọn C và D, bỏ A và B.**
-Tester của Quân nói thẳng: *"C với D tiện. C có sẵn cả bài, D bấm đúng chỗ chưa hiểu là xong,
-nhanh. A phải tự viết, B phải bấm nhiều."* Tester của Huy cũng đề nghị gộp C với D. Và hành vi
-khớp lời nói: ở phiên của Huy, D là option **được mở nhiều nhất và có nhiều thao tác nhất** —
-7 thao tác, gấp hơn ba lần B và C cộng lại.
+Hai tester nói gần như cùng một ý, bằng lời của chính họ.
+
+> Tester của Quân: *"C với D tiện. C có sẵn cả bài, D bấm đúng chỗ chưa hiểu là xong, nhanh.
+> A phải tự viết, B phải bấm nhiều."*
+
+> Tester của Huy: *"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm
+> hướng chọn mục để mở giống option D thì hay hơn"*
+
+Hành vi khớp lời nói: ở phiên của Huy, D là option **được mở nhiều nhất và có nhiều thao tác
+nhất** — 7 thao tác, gấp hơn ba lần B và C cộng lại.
+
+Đáng chú ý: cả hai đều **không chọn một option**, mà tự ghép C với D. Không ai được gợi ý rằng
+ghép là một lựa chọn — bốn nút trong prototype là bốn phương án tách rời.
 
 **P2 — Không ai duyệt thẻ ở Option B.**
 Phiên Quân: *"không Giữ/Sửa/Bỏ"*. Phiên Huy: bấm *Sửa* và *Đổi*, **không** bấm *Giữ*, **không**
@@ -122,5 +131,4 @@ nêu chỗ nó thiếu rồi hỏi lại"* của tester phiên Huy đáng đư�
 ## 6. Việc phải làm trước khi nộp
 
 - [ ] **Cường và Bảo chạy phiên test và viết Feedback Note.** Thiếu hai note; Gate 5 yêu cầu ba.
-- [ ] Bổ sung ít nhất một câu nguyên văn tester ở phiên của Huy.
 - [ ] Viết lại mục 2 và 3 của file này sau khi có đủ ba note — hiện đang dựng trên hai.

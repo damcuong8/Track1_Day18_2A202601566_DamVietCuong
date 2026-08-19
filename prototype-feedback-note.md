@@ -33,7 +33,15 @@
 | **Lý do và trade-off** | *(người facilitate cần bổ sung — hiện chỉ có phần tester đề xuất, chưa có câu trả lời "đổi lại mất gì")* |
 | **Evidence chống lại kỳ vọng của nhóm** | **Ba chỗ.** (1) Tester nói giữ hai nút *giữ / sửa* ở B, nhưng hành vi cho thấy hai nút thật sự dùng là *sửa / đổi* — nút *giữ* **chưa bấm lần nào**. (2) Nhóm lo khung chat làm tester ngồi chờ AI ở Option A — **không xảy ra**, gõ ngay sau 3 giây. (3) Mẩu *"chưa hiểu"* — thứ cả Hypothesis Problem xoay quanh — gần như bị bỏ qua, trong khi mẩu ghi chú ngắn mới là chỗ tester quay lại nhiều nhất. |
 
-**Tester nói / đề xuất** *(thuật lại, chưa phải nguyên văn — cần bổ sung ít nhất một câu nguyên văn)*:
+**Câu tester nói, nguyên văn:**
+
+> "option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm hướng chọn mục để
+> mở giống option D thì hay hơn"
+
+> Đây là **đề xuất thiết kế** của tester, không phải quan sát hành vi. Ghi nguyên văn để giữ
+> đúng lời; xếp vào cột "tester nói", không được đọc thành kết quả kiểm chứng.
+
+**Các ý còn lại, thuật lại** (chưa có nguyên văn):
 
 - Nếu làm theo B thì giảm giao diện xuống còn **hai nút**: *giữ thẻ* hoặc *sửa thẻ*.
 - Thích hơn một phương án **gộp C với D**.
@@ -89,6 +97,9 @@ Nguyên văn, xuất bằng nút *Copy nhật ký*. Bản đầy đủ kèm phâ
   giây trên Option C không thao tác — nhật ký không cho biết đó là đọc kỹ, cân nhắc, hay nói
   chuyện với người ngồi cạnh. Cộng lại là phần lớn thời lượng buổi test **không có dữ liệu
   hành vi**. Chỉ người facilitate mới điền được.
-- Phần *tester nói* là thuật lại, **chưa có câu nguyên văn nào**.
-- Không hỏi được câu trade-off cuối buổi (chọn cái đó thì mất gì so với mấy cái kia).
+- **Không hỏi được câu trade-off cuối buổi.** Câu nguyên văn có nói *"thì hay hơn"* nhưng không
+  nói **đổi lại mất gì**. Gộp C với D nghĩa là AI vẫn soạn sẵn cả gói (chi phí đọc của C) cộng
+  thêm một lớp chọn mục — chưa biết tester có chịu cái giá đó không.
+- Hai ý còn lại (rút Option B xuống hai nút; cơ chế AI tự nêu chỗ thiếu rồi hỏi lại) vẫn là
+  **thuật lại**, chưa có nguyên văn.
 - Chưa hỏi được tên tester.
