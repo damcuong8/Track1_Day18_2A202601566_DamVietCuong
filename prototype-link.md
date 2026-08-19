@@ -1,31 +1,68 @@
-# Prototype Link — Day 18 (Option B: Co-Creation AI Co-Pilot)
+# Prototype Link — Nhóm cuong, Day 18
 
-**Học viên:** Đàm Việt Cường — **MHV:** 2A202601566  
-**Nhóm:** cuong  
-**Case B:** AI Notes — Personal Learning Notes  
-**Phương án chịu trách nhiệm:** **Option B — Interactive AI Co-Pilot (Dual Mode: Thẻ Giải thích + Thẻ Quiz ôn tập)**  
+**Case B** — AI Notes: Personal Learning Notes
+Bốn option: A (Huy) · B (Cường) · C (Bảo) · D (Quân)
 
 ---
 
-## 1. Đường dẫn trải nghiệm Prototype Option B (Cá nhân)
+## 1. Bản chung bốn option — dùng cho buổi test
 
-- **File cục bộ:** [`prototype-option-b.html`](prototype-option-b.html)
-- **Cách mở trực tiếp:**
-  - Nhấp đúp chuột vào file `prototype-option-b.html` để mở trên bất kỳ trình duyệt web nào (Chrome, Edge, Safari...).
-  - Hoặc dùng tiện ích *Live Server* trong VS Code / Antigravity IDE.
-- **Link Live Demo Online (GitHub Pages):**  
-  `https://damcuong8.github.io/Track1_Day18_2A202601566_DamVietCuong/prototype-option-b.html`
+**[prototype/index.html](prototype/index.html)**
+
+Mở thẳng bằng trình duyệt. Một file, không cần cài gì, không gọi mạng. Bốn nút A / B / C / D
+ngay trên khung chat, chuyển qua lại được mà **ngữ cảnh và task giữ nguyên**.
+
+Đây là bản chạy vòng so sánh, vì nội dung là **canned output viết sẵn** nên tái lập được giữa
+các tester — điều kiện để so sánh bốn option cho ra kết quả đọc được.
+
+Có sẵn **nhật ký hành vi** ở cột phải: ghi mọi thao tác kèm mốc giờ, copy ra dán vào biên bản.
+
+Hướng dẫn dùng: [prototype/README.md](prototype/README.md)
 
 ---
 
-## 2. Các Tính năng Tương tác Cốt lõi trên UI Option B
+## 2. Bộ prototype gọi OpenAI API thật
 
-1. **Khay Ghi chú Gốc (Capture Dock):** Hiển thị 3 mẩu dữ liệu thật từ bài 17 (Highlight Slide 3, Note ngắn Slide 7, Điểm Chưa hiểu Slide 11). Bấm vào từng mẩu note sẽ tự động cuộn mượt mà sang thẻ AI tương ứng.
-2. **Dual-Mode Co-Pilot Stream (2 Loại Thẻ):**
-   - **Thẻ 1 — Giải thích Điểm khó (cho Hoàn):** Tóm tắt điểm mù "Pain vs Consequence" qua ví dụ thực tế; có nút *[✏️ Sửa giải thích]* và *[🔄 Đổi cách giải thích khác]*.
-   - **Thẻ 2 & 3 — Câu hỏi Tự kiểm tra Active Recall (cho Mai):** Trắc nghiệm 4 đáp án có badge trích dẫn nguồn (*Slide 3 & 7*); có nút *[✏️ Sửa câu hỏi]*, *[🔄 Đổi câu khác]* và *[✕ Bỏ qua]*.
-3. **Bộ công cụ Kiểm soát Human-in-the-loop (Gate 3):**
-   - Nút `[⚡ Duyệt nhanh tất cả]` (Batch Review).
-   - Nút `[✏️ Sửa]` mở Modal chỉnh sửa văn phong trực tiếp.
-   - Nút `[🔄 Đổi câu khác]` sinh ngay phương án thay thế có chiều sâu.
-4. **Practice & Review Mode:** Sau khi duyệt xong, bấm `[🚀 Bắt đầu Luyện tập]` để bước vào màn hình trắc nghiệm tương tác thực tế với phản hồi đúng/sai tức thì.
+| Option | File | Phụ trách |
+|---|---|---|
+| A | [proA.html](proA.html) | Trần Đức Bảo dựng khung |
+| B | [proB.html](proB.html) | Trần Đức Bảo dựng khung |
+| C | [proC.html](proC.html) | Trần Đức Bảo |
+| D | [proD.html](proD.html) | Lê Quang Huy dựng, theo thiết kế của Hoàng Minh Quân |
+
+Chạy trên slide thật, gọi model thật. Cách chạy:
+
+```bash
+cp .env.example .env
+```
+
+Dán `OPENAI_API_KEY` vào `.env`, rồi:
+
+```bash
+python serve.py
+```
+
+Mở `http://localhost:8000/proA.html`. Key nằm ở phía server, không xuống trình duyệt.
+`.env` đã nằm trong `.gitignore` — **không commit key vào repo**.
+
+> **Vì sao bộ này không dùng cho vòng so sánh:** gọi model thật thì hai tester chạy cùng một
+> option **không nhận được cùng nội dung**, nên yêu cầu *"cùng ngữ cảnh, cùng task"* chỉ còn
+> đúng ở phần slide. Dùng bộ này để đào sâu chất lượng nội dung sau khi đã xong vòng so sánh.
+
+---
+
+## 3. Bản đào sâu Option B
+
+**[prototype-option-b.html](prototype-option-b.html)** — Đàm Việt Cường.
+
+Chỉ Option B, nhưng có thêm **màn luyện tập trắc nghiệm thật** mà bản chung không có. Chạy sau
+vòng so sánh, khi cần xem bước tiếp theo sau khoảnh khắc duyệt thẻ.
+
+---
+
+## 4. Tài liệu thiết kế đi kèm
+
+- [three-option-design-sheet.md](three-option-design-sheet.md) — design sheet gốc
+- [02-three-solution-options.md](02-three-solution-options.md) — bốn option, distance check
+- [03-human-ai-design-pass.md](03-human-ai-design-pass.md) — Human–AI Decision Table bốn cột
+- [04-micro-prototype.md](04-micro-prototype.md) — cấu trúc màn hình và những thứ prototype cố tình không làm
