@@ -5,7 +5,7 @@
 1. Lê Quang Huy (2A202601821) — Option A
 2. Đàm Việt Cường (2A202601566) — Option B
 3. Trần Đức Bảo (2A202601472) — Option C
-4. Hoàng Minh Quân (2A202601574) — Option D (vào sau)  
+4. Hoàng Minh Quân (2A202601574) — Option D 
 **Case B:** AI Notes — Personal Learning Notes  
 
 ---
@@ -32,7 +32,7 @@
 
 ## PHẦN 2: THIẾT KẾ BA SOLUTION OPTIONS (CHẶNG 2)
 
-### 2.1. Những thành phần giữ nguyên chung (A / B / C)
+### 2.1. Những thành phần giữ nguyên chung (A / B / C / D)
 - **Target User:** Người học tham gia khóa học AI thực chiến trên nền tảng VLearn.
 - **Situation:** Tối trước buổi học kế tiếp, mở bài *"Finding & Validating Pain Points"* có 3 highlight, 2 note ngắn và 1 ảnh chụp/slide đánh dấu *"Chưa hiểu"*.
 - **Outcome Task:** *"Trong tình huống này, hãy dùng từng phương án để biến các mẩu ghi chú và điểm chưa hiểu thành một tài liệu/công cụ ôn tập giúp bạn tự tin trước buổi học tiếp theo."*
@@ -42,7 +42,7 @@
   - *Snippet 2 (Slide 7 - Note ngắn):* "Lưu ý 3 phản xạ: Deflect (Gạt đi), Anchor (Neo lại), Dig (Đào sâu) khi gặp lời khen hoặc đòi hỏi tính năng."
   - *Snippet 3 (Slide 11 - Ảnh chụp + Chưa hiểu):* "Phân biệt Pain (nỗi đau lúc làm job) vs Consequence (hậu quả nếu không giải quyết)."
 
-### 2.2. Bảng so sánh 3 Solution Options & Phân công thành viên
+### 2.2. Bảng so sánh Option A / B / C & Phân công thành viên
 
 | Thành phần | Option A (User-Led / Structured Hub) | Option B (Co-Creation / Interactive Co-Pilot) | Option C (AI-Led / Autonomous 1-Click Pack) |
 |---|---|---|---|

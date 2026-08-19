@@ -1,7 +1,7 @@
 # Micro-Prototype — Day 18
 
 Lê Quang Huy — 2A202601821. Case B — AI Notes.
-Dựng theo [Chặng 2 — Ba Solution Options](../02-three-solution-options.md).
+Dựng theo [Chặng 2 — Các Solution Options](../02-three-solution-options.md).
 
 Mở [index.html](index.html) bằng trình duyệt. Một file, không cần cài gì, không gọi mạng.
 

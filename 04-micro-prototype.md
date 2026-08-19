@@ -15,7 +15,7 @@ Dựng theo [Chặng 2](02-three-solution-options.md) và [Chặng 3](03-human-a
 | Bản chung bốn option | Lê Quang Huy dựng khung; Hoàng Minh Quân thêm D | A, B, C, D — chuyển qua lại bằng nút | [prototype/index.html](prototype/index.html) |
 | Bản riêng Option B | Đàm Việt Cường | Chỉ B, có thêm màn luyện tập trắc nghiệm thật | [prototype-option-b.html](prototype-option-b.html) |
 | Option C | Trần Đức Bảo | Chưa có bản riêng; C nằm trong bản chung | — |
-| Option D | Hoàng Minh Quân | Chỉ D; đã dựng thẳng vào bản chung | [prototype/index.html](prototype/index.html) |
+| Option D | Hoàng Minh Quân | Chỉ D; dựng thẳng vào bản chung. Thiết kế riêng ở [03-human-ai-design-hoangminhquan.md](03-human-ai-design-hoangminhquan.md) | [prototype/index.html](prototype/index.html) |
 
 **Quyết định cho buổi test:** chạy trên **bản chung**, vì đề yêu cầu tester làm cùng một task
 trên cùng một ngữ cảnh ở cả bốn option. File riêng thì mỗi lần chuyển option là đổi luôn
@@ -89,6 +89,7 @@ Cột phải ghi lại tester **đã làm gì**, kèm mốc thời gian và opti
 12:38:44  [A]  bắt đầu gõ nội dung cho thẻ quiz
 12:39:02  [B]  bỏ thẻ giải thích: "Vì sao Problem Hypothesis phải c…"
 12:40:15  [C]  rollback — bỏ bản AI soạn, quay về ghi chú thô
+12:41:02  [D]  chọn mẩu Ảnh chụp + Chưa hiểu · Slide 11 — chỗ đánh dấu chưa hiểu
 ```
 
 Nút *Copy nhật ký* xuất ra dạng tab-separated để dán thẳng vào biên bản test.
