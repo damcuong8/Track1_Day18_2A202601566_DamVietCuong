@@ -12,7 +12,7 @@ Trần Đức Bảo (2A202601472), Hoàng Minh Quân (2A202601574)
 
 | Feedback Note | Người facilitate | Tester | Trạng thái |
 |---|---|---|---|
-| [prototype-feedback-note.md](prototype-feedback-note.md) | Lê Quang Huy | Chưa ghi danh tính | **Có** — đủ nhật ký hành vi, thiếu danh tính tester và câu nguyên văn |
+| [prototype-feedback-note.md](prototype-feedback-note.md) | Lê Quang Huy | anh Coach Lab (chưa hỏi tên) — ngoài nhóm, **không phải target user** | **Có** — đủ nhật ký hành vi; thiếu câu nguyên văn. Vì tester là coach nên phiên này dùng cho interaction breakdown, **không rút value claim** |
 | [06-prototype-feedback-hoangminhquan.md](06-prototype-feedback-hoangminhquan.md) | Hoàng Minh Quân | Một bạn cùng lớp, xác nhận **ngoài nhóm** | **Có** — đủ năm observation focus, có quote nguyên văn |
 | — | Đàm Việt Cường | — | **Chưa có** |
 | — | Trần Đức Bảo | — | **Chưa có** |
@@ -113,12 +113,14 @@ nêu chỗ nó thiếu rồi hỏi lại"* của tester phiên Huy đáng đư�
   mẩu mang tag đó là mẩu được quay lại nhiều nhất. Hai tín hiệu ngược nhau, chưa phân biệt được
   là do tag hay do nội dung mẩu đó khó.
 - **Bộ prototype gọi API thật** ([proA](proA.html)–[proD](proD.html)) chưa được test với ai.
+- **Chưa có phiên nào với đúng target user.** Tester của Huy là coach, tester của Quân là bạn
+  cùng lớp có ôn bài bằng ghi chú — mới một trên hai phiên đúng chân dung người học trong
+  Hypothesis Problem.
 
 ---
 
 ## 6. Việc phải làm trước khi nộp
 
 - [ ] **Cường và Bảo chạy phiên test và viết Feedback Note.** Thiếu hai note; Gate 5 yêu cầu ba.
-- [ ] Điền danh tính tester và xác nhận **ngoài nhóm** cho phiên của Huy.
 - [ ] Bổ sung ít nhất một câu nguyên văn tester ở phiên của Huy.
 - [ ] Viết lại mục 2 và 3 của file này sau khi có đủ ba note — hiện đang dựng trên hai.

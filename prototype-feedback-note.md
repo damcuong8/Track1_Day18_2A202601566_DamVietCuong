@@ -3,15 +3,24 @@
 **Người facilitate:** Lê Quang Huy — 2A202601821
 **Nhóm:** cuong · **Case B** — AI Notes: Personal Learning Notes
 **Prototype:** [prototype/index.html](prototype/index.html) — bản chung bốn option
-**Ngày:** ……  *(cần điền)*
+**Ngày:** 19/08/2026
 
-**Tester:** ……  *(cần điền)*
-**Ngoài nhóm:** ……  *(cần điền — Gate 5 yêu cầu tester ngoài nhóm)*
-**Có context liên quan:** ……  *(cần điền — câu hỏi context có hỏi không, trả lời sao)*
+**Tester:** anh Coach Lab — **chưa kịp hỏi tên**
+**Ngoài nhóm:** Có. Không phải thành viên nhóm, không phải interviewee Day 17.
+**Có context liên quan:** ……  *(chưa ghi — câu hỏi context có hỏi không, trả lời sao)*
+
+> **Tester này không phải target user, và điều đó ảnh hưởng tới cách đọc cả phiên.**
+> Target user trong Hypothesis Problem là **người học đang ôn bài**. Coach Lab là người
+> **dạy chính phương pháp** mà buổi test đang dùng — biết trước bốn option đang thăm dò điều
+> gì, và nhiều khả năng ngồi xuống để **đánh giá prototype**, không phải để ôn bài.
+>
+> Hệ quả: phiên này dùng tốt cho **interaction breakdown** (chỗ khựng, chỗ giao diện không tự
+> nói được), nhưng **không được rút value claim** từ nó. Xem thêm mục "Giới hạn của phiên này".
+
 **Thứ tự mở option:** D → C → A → B, sau đó đảo qua lại nhiều lần
 **Thời lượng:** 10:09:38 → 10:22:57 — 13 phút 19 giây
 
-> Ba ô trống ở trên là dữ liệu chỉ người facilitate mới có. Nhật ký hành vi không ghi được.
+> Ô "có context liên quan" là dữ liệu chỉ người facilitate mới có. Nhật ký hành vi không ghi được.
 
 ---
 
@@ -74,7 +83,14 @@ Nguyên văn, xuất bằng nút *Copy nhật ký*. Bản đầy đủ kèm phâ
 
 ## Giới hạn của phiên này
 
-- Chưa ghi được danh tính tester và **chưa xác nhận tester ngoài nhóm** — Gate 5 yêu cầu điều này.
+- **Tester là Coach Lab, không phải target user.** Đây là giới hạn nặng nhất của phiên: người
+  dạy phương pháp thì biết trước buổi test đang đo gì, và có thể ngồi xuống để đánh giá
+  prototype thay vì để ôn bài. Hai chi tiết trong nhật ký khớp với cách đọc đó: **bốn phút đầu
+  chỉ đảo option 10 lần không làm gì** (khảo sát hết bốn phương án trước), và **7 phút 36 giây
+  đọc Option C** mà không thao tác (đọc để đánh giá). Nếu đúng vậy thì phần lớn buổi này là
+  *review thiết kế*, không phải *người dùng làm task*.
+- Chưa hỏi được tên tester.
+- Chưa ghi câu hỏi context có được hỏi hay không.
 - Phần *tester nói* là thuật lại, **chưa có câu nguyên văn nào**.
 - Bốn phút đầu và bảy phút rưỡi trên C không có thao tác nào được ghi, nên phần lớn thời lượng
   buổi test **không có dữ liệu hành vi**.

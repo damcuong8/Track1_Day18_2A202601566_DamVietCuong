@@ -87,22 +87,56 @@ Note của Cường, vì repo public và đó là giọng của người đượ
 
 ## 4. Phần người nộp tự đánh giá
 
-> **Ba mục dưới đây phải do Lê Quang Huy viết**, không phải AI. Đề yêu cầu AI Support Log là
-> phần phản ánh của chính người nộp.
+> **Ba mục dưới đây là BẢN MẪU do AI soạn để người nộp sửa lại bằng lời của mình.**
+> Đề yêu cầu AI Support Log là phần phản ánh của chính người nộp, nên phần này **phải được
+> viết lại**, không nộp nguyên bản mẫu. Nội dung mẫu bám vào việc đã thật sự xảy ra trong
+> phiên làm việc, nhưng phần đánh giá thì chỉ người nộp mới nói đúng được.
 
-**4.1. Việc tôi tự làm, không dùng AI:**
+### 4.1. Việc tôi tự làm, không dùng AI
 
-……
+> _Bản mẫu — sửa lại._
 
-*(gợi ý những thứ thuộc mục này: toàn bộ Day 17 — chọn case, chuỗi suy luận Solution → Change →
-Actor → Situation → Pain, hai pain hypothesis cạnh tranh, thực hiện buổi phỏng vấn Phạm Duy
-Hoàn; ở Day 18 — chạy buổi test với tester, quyết định giữ bốn option, chốt hướng hypothesis
-gộp, và các quyết định phân công trong nhóm)*
+Toàn bộ Day 17 là của tôi: chọn Case B, chuỗi suy luận Solution → Change → Actor → Situation
+& Job → Pain, dựng hai pain hypothesis cạnh tranh rồi chọn Pain A, và thực hiện buổi phỏng vấn
+Phạm Duy Hoàn. Practice Reflection cũng tôi tự viết.
 
-**4.2. Chỗ tôi thấy AI hời hợt nhất, và tôi đã làm gì:**
+Sang Day 18, những quyết định sau là của tôi, không phải của AI:
 
-……
+- **Chạy buổi test** với Coach Lab và ghi lại phản hồi.
+- **Giữ bốn option** khi nhóm có thành viên thứ tư, thay vì ép về ba cho khớp đề.
+- **Chọn hướng hypothesis** — khi AI đưa ba phương án A/B/C thì tôi chốt nghiêng về khung của
+  mình, và AI dựng bản gộp theo hướng đó.
+- **Không gộp các file Chặng 3** — tôi hỏi lại vì sao phải gộp, và giữ file riêng của từng
+  thành viên để không mất dấu ai làm phần nào.
+- **Phân công chi tiết #2 / #4 / #6** cho ba thành viên ở bảng huddle.
+- **Quyết định lấy phần nào từ pull request của Bảo** — chỉ lấy UI, không lấy phần xoá.
 
-**4.3. Nếu làm lại, tôi sẽ dùng AI khác đi ở chỗ nào:**
+### 4.2. Chỗ tôi thấy AI hời hợt nhất, và tôi đã làm gì
 
-……
+> _Bản mẫu — sửa lại._
+
+Chỗ nặng nhất là **AI đọc bản tóm tắt thay vì đọc dữ liệu gốc**. Nó khẳng định bạn Hoàn "đã
+đang làm Option #1", dựa vào Interview Record. Chỉ khi mở transcript nguyên văn ra thì mới lộ
+là câu đó ở thì điều kiện — *"Chắc mình sẽ..."* — và bật ra sau một câu hỏi xin giải pháp.
+Hành vi thật của Hoàn là hỏi giải thích từng chỗ, tức Option #2, ngược hẳn.
+
+Điều tôi rút ra: AI đọc rất nhanh nhưng **không tự phân biệt được "user đã làm" với "user nói
+sẽ làm"**, trong khi cả bài Day 17 và Day 18 đứng hay đổ ở đúng ranh giới đó. Sau lần ấy tôi
+yêu cầu AI đối chiếu transcript gốc trước khi kết luận về hành vi.
+
+Chỗ thứ hai: AI **đề xuất lặp lại một việc không cần thiết** — ba lần đòi gộp các file Chặng 3,
+trong khi bảng gộp bốn cột đã tồn tại. Tôi hỏi lại "sao phải gộp" thì lý do sụp. Nếu tôi không
+hỏi mà làm theo thì đã mất dấu vết đóng góp của từng người.
+
+### 4.3. Nếu làm lại, tôi sẽ dùng AI khác đi ở chỗ nào
+
+> _Bản mẫu — sửa lại._
+
+- **Đưa dữ liệu gốc trước, bản tóm tắt sau.** Lần này tôi đưa Interview Record trước và
+  transcript sau, nên AI kết luận sai ngay từ đầu rồi mới phải sửa.
+- **Không hỏi AI "nên chọn option nào" khi chưa đọc hết evidence.** AI đã gợi ý một bộ ba
+  trước khi đọc Interview Record, và sau đó phải tự rút lại.
+- **Dùng AI để tìm chỗ mâu thuẫn, không dùng để tìm chỗ đồng thuận.** Việc AI làm tốt nhất cả
+  phiên là đối chiếu nhật ký hành vi với lời tester và chỉ ra nút *Giữ* chưa ai bấm — tức là
+  đi tìm chỗ dữ liệu cãi nhau. Những chỗ nó gom mọi thứ thành một kết luận gọn gàng thì thường
+  là chỗ tôi phải kiểm lại.
