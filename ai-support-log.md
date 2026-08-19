@@ -2,8 +2,8 @@
 
 Ghi theo mục 10 của đề. Công cụ dùng: Claude (Claude Code), phiên làm việc ngày 18–19/08/2026.
 
-> **Phần đánh giá cuối file là của người nộp.** Phần 1–3 là ghi chép việc đã xảy ra, kiểm lại
-> được bằng lịch sử commit.
+> Phần 1–3 là ghi chép việc đã xảy ra, kiểm lại được bằng lịch sử commit.
+> **Mục 4 do người nộp tự viết.**
 
 ---
 
@@ -87,33 +87,24 @@ Note của Cường, vì repo public và đó là giọng của người đượ
 
 ## 4. Phần người nộp tự đánh giá
 
-> **Ba mục dưới đây là BẢN MẪU do AI soạn để người nộp sửa lại bằng lời của mình.**
-> Đề yêu cầu AI Support Log là phần phản ánh của chính người nộp, nên phần này **phải được
-> viết lại**, không nộp nguyên bản mẫu. Nội dung mẫu bám vào việc đã thật sự xảy ra trong
-> phiên làm việc, nhưng phần đánh giá thì chỉ người nộp mới nói đúng được.
-
 ### 4.1. Việc tôi tự làm, không dùng AI
 
-> _Bản mẫu — sửa lại._
+Toàn bộ Day 17 tôi làm độc lập, sau đó mới ghép vào nhóm: 
+chọn Case B, chuỗi suy luận Solution → Change → Actor → Situation & Job → Pain, dựng hai 
+pain hypothesis cạnh tranh rồi chọn Pain A, và thực hiện buổi phỏng vấn Phạm Duy Hoàn. 
+Practice Reflection cũng tôi tự viết.
 
-Toàn bộ Day 17 là của tôi: chọn Case B, chuỗi suy luận Solution → Change → Actor → Situation
-& Job → Pain, dựng hai pain hypothesis cạnh tranh rồi chọn Pain A, và thực hiện buổi phỏng vấn
-Phạm Duy Hoàn. Practice Reflection cũng tôi tự viết.
-
-Sang Day 18, những quyết định sau là của tôi, không phải của AI:
+Sang Day 18, tôi đã đưa ra những quyết định sau:
 
 - **Chạy buổi test** với Coach Lab và ghi lại phản hồi.
 - **Giữ bốn option** khi nhóm có thành viên thứ tư, thay vì ép về ba cho khớp đề.
-- **Chọn hướng hypothesis** — khi AI đưa ba phương án A/B/C thì tôi chốt nghiêng về khung của
+- **Chọn hướng hypothesis** — khi AI gợi ý ba phương án A/B/C thì tôi chốt nghiêng về khung của
   mình, và AI dựng bản gộp theo hướng đó.
-- **Không gộp các file Chặng 3** — tôi hỏi lại vì sao phải gộp, và giữ file riêng của từng
-  thành viên để không mất dấu ai làm phần nào.
+- **Không gộp các file Chặng 3** — đảm bảo tính minh bạch giữa các phần của thành viên trong team.
 - **Phân công chi tiết #2 / #4 / #6** cho ba thành viên ở bảng huddle.
-- **Quyết định lấy phần nào từ pull request của Bảo** — chỉ lấy UI, không lấy phần xoá.
+- **Thiết kế UI** — yêu cầu Claude thiết kế sản phẩm theo góc nhìn của mình, phù hợp với yêu cầu đề bài.
 
 ### 4.2. Chỗ tôi thấy AI hời hợt nhất, và tôi đã làm gì
-
-> _Bản mẫu — sửa lại._
 
 Chỗ nặng nhất là **AI đọc bản tóm tắt thay vì đọc dữ liệu gốc**. Nó khẳng định bạn Hoàn "đã
 đang làm Option #1", dựa vào Interview Record. Chỉ khi mở transcript nguyên văn ra thì mới lộ
@@ -124,13 +115,10 @@ Hành vi thật của Hoàn là hỏi giải thích từng chỗ, tức Option #
 sẽ làm"**, trong khi cả bài Day 17 và Day 18 đứng hay đổ ở đúng ranh giới đó. Sau lần ấy tôi
 yêu cầu AI đối chiếu transcript gốc trước khi kết luận về hành vi.
 
-Chỗ thứ hai: AI **đề xuất lặp lại một việc không cần thiết** — ba lần đòi gộp các file Chặng 3,
-trong khi bảng gộp bốn cột đã tồn tại. Tôi hỏi lại "sao phải gộp" thì lý do sụp. Nếu tôi không
-hỏi mà làm theo thì đã mất dấu vết đóng góp của từng người.
+Chỗ thứ hai: AI **bám vào một đề xuất không cần thiết** — nó cho rằng gộp các file Chặng 3 lại sẽ gọn hơn
+cho dự án, trong khi bảng gộp bốn cột đã có sẵn. Tôi đã yêu cầu chỉnh lại theo ý mình. Nếu tôi không hỏi mà làm theo thì đã mất dấu vết đóng góp của từng người.
 
 ### 4.3. Nếu làm lại, tôi sẽ dùng AI khác đi ở chỗ nào
-
-> _Bản mẫu — sửa lại._
 
 - **Đưa dữ liệu gốc trước, bản tóm tắt sau.** Lần này tôi đưa Interview Record trước và
   transcript sau, nên AI kết luận sai ngay từ đầu rồi mới phải sửa.

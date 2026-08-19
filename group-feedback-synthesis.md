@@ -12,7 +12,7 @@ Trần Đức Bảo (2A202601472), Hoàng Minh Quân (2A202601574)
 
 | Feedback Note | Người facilitate | Tester | Trạng thái |
 |---|---|---|---|
-| [prototype-feedback-note.md](prototype-feedback-note.md) | Lê Quang Huy | anh Coach Lab (chưa hỏi tên) — ngoài nhóm, **không phải target user** | **Có** — đủ nhật ký hành vi; thiếu câu nguyên văn. Vì tester là coach nên phiên này dùng cho interaction breakdown, **không rút value claim** |
+| [prototype-feedback-note.md](prototype-feedback-note.md) | Lê Quang Huy | anh Coach Lab (chưa hỏi tên) — ngoài nhóm, là HS/SV nên **đúng chân dung target user** | **Có** — đủ nhật ký hành vi; thiếu câu nguyên văn. Tester đã biết sẵn nội dung fixture, xem ghi chú trong file |
 | [06-prototype-feedback-hoangminhquan.md](06-prototype-feedback-hoangminhquan.md) | Hoàng Minh Quân | Một bạn cùng lớp, xác nhận **ngoài nhóm** | **Có** — đủ năm observation focus, có quote nguyên văn |
 | — | Đàm Việt Cường | — | **Chưa có** |
 | — | Trần Đức Bảo | — | **Chưa có** |
@@ -113,9 +113,9 @@ nêu chỗ nó thiếu rồi hỏi lại"* của tester phiên Huy đáng đư�
   mẩu mang tag đó là mẩu được quay lại nhiều nhất. Hai tín hiệu ngược nhau, chưa phân biệt được
   là do tag hay do nội dung mẩu đó khó.
 - **Bộ prototype gọi API thật** ([proA](proA.html)–[proD](proD.html)) chưa được test với ai.
-- **Chưa có phiên nào với đúng target user.** Tester của Huy là coach, tester của Quân là bạn
-  cùng lớp có ôn bài bằng ghi chú — mới một trên hai phiên đúng chân dung người học trong
-  Hypothesis Problem.
+- **Cả hai tester đều đã biết sẵn nội dung bài học dùng làm fixture** (anh Coach Lab, và một
+  bạn cùng lớp). Chưa ai gặp ba mẩu ghi chú đó ở trạng thái thật sự chưa hiểu, nên phản ứng
+  với mẩu đánh dấu *"chưa hiểu"* chưa đo được đúng.
 
 ---
 

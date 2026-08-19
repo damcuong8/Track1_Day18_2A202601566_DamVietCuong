@@ -37,9 +37,9 @@ phải do người ngồi cạnh nhớ lại. Xem mục 7.
 
 | Mục | Nội dung |
 |---|---|
-| Tester | anh Coach Lab — **chưa kịp hỏi tên**. Ngoài nhóm, nhưng **không phải target user** |
+| Tester | anh Coach Lab — **chưa kịp hỏi tên**. Ngoài nhóm, là HS/SV nên đúng chân dung target user |
 | Ngày | 19/08/2026 |
-| Có context liên quan | ……  *(chưa ghi)* |
+| Có context liên quan | Có — cũng là sinh viên, vẫn đang đi học và ôn bài |
 | Thứ tự mở option | D → C → A → B, sau đó đảo qua lại nhiều lần |
 | Tổng thời lượng | 10:09:38 → 10:22:57 — **13 phút 19 giây** |
 | Nhật ký hành vi | **Có.** Nguyên văn ở [phụ lục](#phụ-lục--nhật-ký-hành-vi-nguyên-văn) |

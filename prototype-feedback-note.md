@@ -7,20 +7,17 @@
 
 **Tester:** anh Coach Lab — **chưa kịp hỏi tên**
 **Ngoài nhóm:** Có. Không phải thành viên nhóm, không phải interviewee Day 17.
-**Có context liên quan:** ……  *(chưa ghi — câu hỏi context có hỏi không, trả lời sao)*
+**Có context liên quan:** Có — cũng là sinh viên, vẫn đang đi học và ôn bài.
 
-> **Tester này không phải target user, và điều đó ảnh hưởng tới cách đọc cả phiên.**
-> Target user trong Hypothesis Problem là **người học đang ôn bài**. Coach Lab là người
-> **dạy chính phương pháp** mà buổi test đang dùng — biết trước bốn option đang thăm dò điều
-> gì, và nhiều khả năng ngồi xuống để **đánh giá prototype**, không phải để ôn bài.
+> **Đúng chân dung target user.** Anh Coach Lab cũng là học sinh — sinh viên, cũng ôn bài như
+> đối tượng mô tả trong Hypothesis Problem. Vai trò coach là việc bạn ấy làm thêm, không làm
+> bạn ấy thôi là người trải nghiệm thật.
 >
-> Hệ quả: phiên này dùng tốt cho **interaction breakdown** (chỗ khựng, chỗ giao diện không tự
-> nói được), nhưng **không được rút value claim** từ nó. Xem thêm mục "Giới hạn của phiên này".
+> Một điểm cần nhớ khi đọc kết quả: bạn ấy **đã nắm nội dung bài học** dùng làm fixture. Xem
+> mục "Giới hạn của phiên này".
 
 **Thứ tự mở option:** D → C → A → B, sau đó đảo qua lại nhiều lần
 **Thời lượng:** 10:09:38 → 10:22:57 — 13 phút 19 giây
-
-> Ô "có context liên quan" là dữ liệu chỉ người facilitate mới có. Nhật ký hành vi không ghi được.
 
 ---
 
@@ -83,15 +80,15 @@ Nguyên văn, xuất bằng nút *Copy nhật ký*. Bản đầy đủ kèm phâ
 
 ## Giới hạn của phiên này
 
-- **Tester là Coach Lab, không phải target user.** Đây là giới hạn nặng nhất của phiên: người
-  dạy phương pháp thì biết trước buổi test đang đo gì, và có thể ngồi xuống để đánh giá
-  prototype thay vì để ôn bài. Hai chi tiết trong nhật ký khớp với cách đọc đó: **bốn phút đầu
-  chỉ đảo option 10 lần không làm gì** (khảo sát hết bốn phương án trước), và **7 phút 36 giây
-  đọc Option C** mà không thao tác (đọc để đánh giá). Nếu đúng vậy thì phần lớn buổi này là
-  *review thiết kế*, không phải *người dùng làm task*.
-- Chưa hỏi được tên tester.
-- Chưa ghi câu hỏi context có được hỏi hay không.
+- **Tester đã biết sẵn nội dung bài học dùng làm fixture.** Ba mẩu ghi chú lấy từ bài Day 17,
+  mà anh Coach Lab thì đã nắm phần đó. Điều này giải thích được một chỗ trong nhật ký: mẩu
+  *"chưa hiểu" Slide 11* — Pain vs Consequence — chỉ được mở **4 giây**. Với người đã hiểu sẵn
+  thì mẩu đó không có gì để hỏi, nên việc bỏ qua nó **không nói được gì** về việc mẩu "chưa
+  hiểu" có phải trọng tâm hay không.
+- **Không phải mọi khoảng lặng đều là "đang bí".** Bốn phút đầu đảo option 10 lần, và 7 phút 36
+  giây trên Option C không thao tác — nhật ký không cho biết đó là đọc kỹ, cân nhắc, hay nói
+  chuyện với người ngồi cạnh. Cộng lại là phần lớn thời lượng buổi test **không có dữ liệu
+  hành vi**. Chỉ người facilitate mới điền được.
 - Phần *tester nói* là thuật lại, **chưa có câu nguyên văn nào**.
-- Bốn phút đầu và bảy phút rưỡi trên C không có thao tác nào được ghi, nên phần lớn thời lượng
-  buổi test **không có dữ liệu hành vi**.
-- Không hỏi được câu trade-off cuối buổi.
+- Không hỏi được câu trade-off cuối buổi (chọn cái đó thì mất gì so với mấy cái kia).
+- Chưa hỏi được tên tester.
