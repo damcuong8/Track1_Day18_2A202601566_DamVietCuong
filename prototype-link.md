@@ -1,31 +1,64 @@
-# Prototype Link — Day 18 (Option B: Co-Creation AI Co-Pilot)
+# Prototype Link & Hướng Dẫn Trải Nghiệm — Day 18
 
 **Học viên:** Đàm Việt Cường — **MHV:** 2A202601566  
 **Nhóm:** cuong  
 **Case B:** AI Notes — Personal Learning Notes  
-**Phương án chịu trách nhiệm:** **Option B — Interactive AI Co-Pilot (Dual Mode: Thẻ Giải thích + Thẻ Quiz ôn tập)**  
+**Phương án chịu trách nhiệm:** **Option B — Interactive AI Co-Pilot (proB.html & proB.js)**  
 
 ---
 
-## 1. Đường dẫn trải nghiệm Prototype Option B (Cá nhân)
+## 1. Cách Khởi Chạy Prototype trên Máy Tính
 
-- **File cục bộ:** [`prototype-option-b.html`](prototype-option-b.html)
-- **Cách mở trực tiếp:**
-  - Nhấp đúp chuột vào file `prototype-option-b.html` để mở trên bất kỳ trình duyệt web nào (Chrome, Edge, Safari...).
-  - Hoặc dùng tiện ích *Live Server* trong VS Code / Antigravity IDE.
-- **Link Live Demo Online (GitHub Pages):**  
-  `https://damcuong8.github.io/Track1_Day18_2A202601566_DamVietCuong/prototype-option-b.html`
+Nhóm đã xây dựng hệ thống prototype hoàn chỉnh gồm 3 phương án độc lập sử dụng HTML/CSS/JavaScript thuần kết hợp backend Python nội bộ (`serve.py`) để bảo mật API key và xử lý streaming:
+
+### Các bước khởi chạy:
+1. **Mở Terminal / PowerShell** tại thư mục dự án này:
+   ```bash
+   cd d:\AI_thuc_chien\Track1_day17_2A202601566_DamVietCuong\Track1_Day18_2A202601566_DamVietCuong
+   ```
+2. **Khởi động server nội bộ:**
+   ```bash
+   python serve.py
+   ```
+   *(Server sẽ chạy tại địa chỉ `http://localhost:8000`).*
+3. **Mở trình duyệt và truy cập các phương án:**
+   - 🅰️ **Option A (Lê Quang Huy):** [http://localhost:8000/proA.html](http://localhost:8000/proA.html)
+   - 🅱️ **Option B (Đàm Việt Cường):** [http://localhost:8000/proB.html](http://localhost:8000/proB.html)
+   - 🅲 **Option C (Trần Đức Bảo):** [http://localhost:8000/proC.html](http://localhost:8000/proC.html)
+
+*(Ngoài ra bạn có thể mở trực tiếp file độc lập [`prototype-option-b.html`](prototype-option-b.html) trên bất kỳ trình duyệt nào mà không cần server).*
 
 ---
 
-## 2. Các Tính năng Tương tác Cốt lõi trên UI Option B
+## 2. Cấu Trúc Mã Nguồn Prototype trong Thư Mục `assets/`
 
-1. **Khay Ghi chú Gốc (Capture Dock):** Hiển thị 3 mẩu dữ liệu thật từ bài 17 (Highlight Slide 3, Note ngắn Slide 7, Điểm Chưa hiểu Slide 11). Bấm vào từng mẩu note sẽ tự động cuộn mượt mà sang thẻ AI tương ứng.
-2. **Dual-Mode Co-Pilot Stream (2 Loại Thẻ):**
-   - **Thẻ 1 — Giải thích Điểm khó (cho Hoàn):** Tóm tắt điểm mù "Pain vs Consequence" qua ví dụ thực tế; có nút *[✏️ Sửa giải thích]* và *[🔄 Đổi cách giải thích khác]*.
-   - **Thẻ 2 & 3 — Câu hỏi Tự kiểm tra Active Recall (cho Mai):** Trắc nghiệm 4 đáp án có badge trích dẫn nguồn (*Slide 3 & 7*); có nút *[✏️ Sửa câu hỏi]*, *[🔄 Đổi câu khác]* và *[✕ Bỏ qua]*.
-3. **Bộ công cụ Kiểm soát Human-in-the-loop (Gate 3):**
-   - Nút `[⚡ Duyệt nhanh tất cả]` (Batch Review).
-   - Nút `[✏️ Sửa]` mở Modal chỉnh sửa văn phong trực tiếp.
-   - Nút `[🔄 Đổi câu khác]` sinh ngay phương án thay thế có chiều sâu.
-4. **Practice & Review Mode:** Sau khi duyệt xong, bấm `[🚀 Bắt đầu Luyện tập]` để bước vào màn hình trắc nghiệm tương tác thực tế với phản hồi đúng/sai tức thì.
+```text
+Track1_Day18_2A202601566_DamVietCuong/
+├── serve.py                  # Server Python nội bộ điều phối API & giữ bảo mật Key
+├── proA.html                 # Trang trải nghiệm Option A (User-Led / Zero-AI)
+├── proB.html                 # Trang trải nghiệm Option B (Đàm Việt Cường phụ trách)
+├── proC.html                 # Trang trải nghiệm Option C (AI-Led / Autonomous)
+├── prototype-option-b.html   # Standalone UI demo cho Option B
+└── assets/
+    ├── app.css               # Hệ thống CSS Design System chuẩn Manrope/DM Mono
+    ├── core.js               # Shell điều khiển slide, sidebar, layout chung
+    ├── notes.js              # Quản lý dữ liệu ghi chú của người học
+    ├── notesview.js          # Giao diện hiển thị và tổng hợp ghi chú
+    ├── notepad.js            # Khay ghi chú Notepad đính kèm
+    ├── chat.js               # Module trò chuyện thời gian thực với AI
+    ├── ai.js                 # Kết nối API OpenAI / Mock fallback
+    ├── proA.js               # Logic điều khiển Option A (Khay kéo thả)
+    ├── proB.js               # Logic điều khiển Option B (Đàm Việt Cường — Smart Dwell Trigger & Card Review)
+    └── proC.js               # Logic điều khiển Option C (1-Click Auto Study Pack)
+```
+
+---
+
+## 3. Cơ Chế Hoạt Động của Option B (Đàm Việt Cường Phụ Trách)
+
+- **Cơ chế Kích hoạt Thông minh (Smart Dwell Trigger):**  
+  AI không tự tiện can thiệp ngay khi mở trang mà im lặng quan sát. Chỉ khi người học **ở lại slide 10 giây (dwell time)** hoặc **vừa ghi thêm một mẩu ghi chú mới**, AI mới chủ động hiển thị thẻ hỏi: *"Bạn có cần trợ giúp với slide này không?"*.
+- **Cơ chế Đồng kiến tạo (Ask & Propose):**  
+  - Bấm `[✓ Có, giúp mình với]` $\rightarrow$ AI đọc slide và tạo 4 tab: *Tóm tắt & Quiz ôn tập*, *Trò chuyện thời gian thực*, *Xem ghi chú gốc*, *Tổng hợp ghi chú*.
+  - Bấm `[✕ Chưa cần, cảm ơn]` $\rightarrow$ AI tiếp tục im lặng, không làm phiền.
+  - Bấm `[Thu hồi — về lại im lặng]` $\rightarrow$ Xóa toàn bộ nội dung AI vừa tạo và quay về trạng thái ban đầu (Recovery Path).
