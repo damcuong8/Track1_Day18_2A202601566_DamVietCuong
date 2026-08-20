@@ -157,10 +157,11 @@ gọi API thật **trước khi có Option D**, nên tester đó không được
 Hai pattern còn lại: **không phiên nào chốt xong bộ thẻ ở Option B**, và **tín hiệu evidence
 gần như không được dùng tới** — hai trên ba phiên chưa cho thấy badge nguồn được đọc.
 
-> **Một chỗ dữ liệu xung đột, chưa xử lý xong.** Bảng đối chiếu của Bảo ghi phiên của Huy chọn
-> Option B và *"không dùng nút sửa/rollback nào"*. Nhật ký hành vi phiên đó cho thấy ngược lại:
-> chọn C+D, và có bấm rollback, sửa, đổi thẻ. Nhóm cần hỏi lại Bảo cột đó lấy từ đâu — chi tiết
-> ở [group-feedback-synthesis.md](group-feedback-synthesis.md) mục 1.1.
+> **Một chỗ đã sửa lại theo dữ liệu.** Bảng đối chiếu ba lượt của Bảo ban đầu ghi phiên của tôi
+> chọn Option B và *"không dùng nút sửa/rollback nào"*. Nhật ký hành vi phiên đó cho thấy ngược
+> lại: chọn C+D, và có bấm rollback, sửa, đổi thẻ kèm mốc giờ. Cột đó đã được sửa theo nhật ký,
+> kèm bảng liệt kê từng ô đã đổi để Bảo đối chiếu — chi tiết ở
+> [group-feedback-synthesis.md](group-feedback-synthesis.md) mục 1.1.
 
 ### Next Change
 

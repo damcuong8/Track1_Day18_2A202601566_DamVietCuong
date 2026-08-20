@@ -21,22 +21,18 @@ Trần Đức Bảo (2A202601472), Hoàng Minh Quân (2A202601574)
 > được thêm vào bộ đó** — nên tester của Bảo **không được xem Option D**. Mọi so sánh "ai chọn
 > option nào" phải tính tới chuyện này.
 
-### 1.1. Hai dòng trong bảng đối chiếu của Bảo không khớp nhật ký
+### 1.1. Bảng đối chiếu của Bảo — đã sửa cột "Feedback 2"
 
-Bảng "Đối chiếu ba lượt feedback" trong [file của Bảo](06-prototype-feedback-tranducbao.md) có
-cột *"Feedback 2 (khảo sát: Huy)"*. Hai ô trong cột đó ngược với dữ liệu phiên của Huy:
+Bản Bảo gửi ban đầu ghi cột *"Feedback 2 (khảo sát: Huy)"* khác với nhật ký hành vi phiên đó:
+ghi chọn Option **B** (thật ra là **C + D**) và ghi *"không dùng nút sửa/rollback nào"* (thật ra
+có bấm rollback, sửa thẻ, đổi thẻ, đủ mốc giờ).
 
-| Ô | Bảo ghi | Nhật ký hành vi phiên Huy |
-|---|---|---|
-| Option được chọn | **B** | **C và D** — nguyên văn: *"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm... giống option D thì hay hơn"* |
-| Cách lấy lại control | *"Chỉ góp ý bằng lời, không dùng nút sửa/rollback nào"* | Có bấm thật: **rollback** ở C lúc 10:21:31, **sửa** thẻ ở B lúc 10:22:41, **đổi thẻ** lúc 10:22:45 |
+Cột đó **đã được sửa theo nhật ký**, và bảng *"Đã sửa gì so với bản Bảo gửi"* trong
+[file của Bảo](06-prototype-feedback-tranducbao.md) liệt kê từng ô đã đổi kèm căn cứ.
 
-Dòng *"Breakdown chính"* cũng ghi một nội dung (*"muốn 1 file chung gom ghi chú đã hỏi"*) không
-có trong biên bản phiên của Huy.
+Cột *"Feedback 3 (Cường)"* để trống, vì Cường chưa nộp Feedback Note nào — chưa đối chứng được.
 
-**Cách xử lý:** giữ nguyên văn bảng của Bảo trong file của bạn ấy, nhưng phần tổng hợp dưới đây
-**dùng nhật ký hành vi làm chuẩn** cho phiên của Huy. Nhóm cần hỏi lại Bảo xem cột đó lấy từ
-đâu — có thể là một buổi khác chưa được ghi biên bản, hoặc điền từ trí nhớ.
+**Còn phải hỏi lại Bảo** cột Feedback 2 lấy từ đâu: có thể là một buổi khác chưa ghi biên bản.
 
 ---
 

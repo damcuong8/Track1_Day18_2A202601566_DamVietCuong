@@ -4,9 +4,10 @@
 **Nhóm:** cuong · **Case B** — AI Notes: Personal Learning Notes
 **Option phụ trách:** Option C
 
-> Nội dung dưới đây **giữ nguyên văn** bản Bảo gửi, không biên tập.
-> Phần đối chiếu ba lượt feedback của Bảo có hai dòng lệch với nhật ký hành vi phiên của Huy —
-> xem [group-feedback-synthesis.md](group-feedback-synthesis.md) mục 1.1.
+> **Phần "Mẫu ghi quan sát" và "AI Support Log" giữ nguyên văn bản Bảo gửi.**
+> **Phần "Đối chiếu ba lượt feedback" đã được sửa** ở cột Feedback 2, vì bản gửi ban đầu ghi
+> khác với nhật ký hành vi phiên của Huy. Bảng "Đã sửa gì" liệt kê đúng từng ô đã đổi và căn cứ,
+> để Bảo đối chiếu lại và báo nếu có buổi nào mình chưa biết.
 
 **Prototype đã dùng:** bộ gọi API thật ([proA](proA.html) / [proB](proB.html) / [proC](proC.html)),
 chạy **trước khi** Option D được thêm vào bộ này. Tester không được xem Option D.
@@ -34,24 +35,73 @@ chạy **trước khi** Option D được thêm vào bộ này. Tester không đ
 
 ---
 
-## Đối chiếu ba lượt feedback — bản của Bảo
+## Đối chiếu ba lượt feedback
 
-> Giữ nguyên văn. **Hai dòng trong bảng này lệch với nhật ký hành vi phiên của Huy** — đối
-> chiếu ở [group-feedback-synthesis.md](group-feedback-synthesis.md) mục 1.1 trước khi dùng.
+> **Bảng này đã được sửa lại ở cột "Feedback 2".** Bản Bảo gửi ban đầu ghi cột đó khác với
+> nhật ký hành vi phiên Huy đã ghi được. Danh sách đúng những chỗ đã đổi nằm ở mục
+> "Đã sửa gì" ngay dưới bảng — Bảo xem lại và báo nếu có buổi khác mình chưa biết.
 
-| Nội dung | Feedback 1 (Đức, khảo sát: Bảo) | Feedback 2 (khảo sát: Huy) | Feedback 3 (khảo sát: Cường) | Pattern hoặc khác biệt |
+| Nội dung | Feedback 1 — Đức (facilitate: Bảo) | Feedback 2 — anh Coach Lab (facilitate: Huy) | Feedback 3 (facilitate: Cường) | Pattern hoặc khác biệt |
 |---|---|---|---|---|
-| First action | Tự chụp ảnh, test hỏi đáp realtime | Thực hiện thao tác hỏi đáp với AI | Kiểm tra xem AI có hoạt động đúng như nhóm nói | |
-| Breakdown chính | Muốn hover để hỏi luôn thay vì phải chụp | Muốn 1 file chung gom ghi chú đã hỏi, AI tổng hợp phân tích phần hỏi nhiều nhất | Muốn Option B tự nhận biết chỗ đang khúc mắc, chủ động hỏi có cần giúp không | Ba người chỉ ra ba việc khác nhau — không lặp lại thành một pain point chung, nhưng cả ba đều xoay quanh việc muốn AI chủ động và "hiểu" đúng chỗ mình đang cần hơn |
-| Cách lấy lại control | Chỉ góp ý bằng lời, không dùng nút sửa/rollback nào | Chỉ góp ý bằng lời, không dùng nút sửa/rollback nào | Chỉ góp ý bằng lời, không dùng nút sửa/rollback nào | Cả ba đều giống nhau — chưa ai thật sự bấm nút sửa/rollback trong lúc test, chỉ nói miệng góp ý |
-| Option được chọn | B | B | C | 2/3 chọn B, 1 chọn C — B đang nhỉnh hơn nhưng mẫu còn quá nhỏ để kết luận |
-| Trade-off | Chọn B để chủ động kiểm soát, không bị AI làm phiền khi đã hiểu bài | Chỉ muốn nhờ AI khi thực sự thấy khó hiểu, tự học được thì không cần AI xen vào | Chấp nhận đánh đổi sự tiện dụng để lấy sự chắc chắn | Hai người chọn B đều vì muốn tự chủ, chỉ gọi AI khi cần — khớp với lý do "kiểm soát" của Đức. Người chọn C lại đánh đổi ngược, ưu tiên chắc chắn hơn tiện dụng — đáng chú ý vì hơi lệch với cách nhóm mô tả trade-off của C (README đang ghi C là "nhanh nhất, đổi lại có thể sai/áp đặt", tức nghiêng về tiện dụng hơn chắc chắn) — nên hỏi lại Cường xem có ghi nhầm ý không |
+| **Prototype đã dùng** | Bộ API thật — **A, B, C, chưa có D** | Bản chung canned — **A, B, C, D** | *(chưa có Feedback Note)* | Hai phiên chạy hai bản khác nhau, và Đức **không được xem Option D** |
+| **First action** | Tự chụp ảnh, test hỏi đáp realtime | Bốn phút đầu chỉ đảo option 10 lần, không thao tác. Vào Option A thì **gõ ngay sau 3 giây**, không chờ AI | *(chưa có)* | Cả hai đều chủ động thao tác ngay, không ai ngồi chờ AI mở lời |
+| **Breakdown chính** | Muốn hover để hỏi luôn thay vì phải chụp | Dừng **7 phút 36 giây** trên Option C không thao tác gì — hơn nửa buổi test | *(chưa có)* | Cả hai đều vướng ở **chi phí để hỏi được đúng chỗ**: Đức thấy chụp ảnh chậm, Coach Lab đọc lâu ở bản AI soạn sẵn |
+| **Cách lấy lại control** | Chỉ góp ý bằng lời, không dùng nút sửa/rollback nào | **Có dùng thật:** rollback ở C lúc 10:21:31 (4 giây sau khi đổi mục tiêu), sửa thẻ ở B lúc 10:22:41, đổi thẻ lúc 10:22:45. **Không bấm *Giữ* lần nào, không bấm *Bỏ* lần nào** | *(chưa có)* | Khác nhau: một người chỉ nói miệng, một người bấm thật. Nhưng **không ai chốt xong bộ thẻ ở Option B** |
+| **Option được chọn** | **B** | **C + D** — tự đề nghị ghép hai cái | *(chưa có)* | Không so sánh trực tiếp được: Đức **không có D để chọn**, và thứ Đức mô tả muốn thêm chính là cơ chế của D |
+| **Trade-off** | Chọn B để chủ động kiểm soát, không bị AI làm phiền khi đã hiểu bài | **Chưa hỏi được.** Chỉ nói *"thì hay hơn"*, không nói đổi lại mất gì | *(chưa có)* | Mới một trên hai phiên lấy được trade-off |
+| **Evidence chống lại kỳ vọng nhóm** | Nhóm nghĩ chụp ảnh giúp hỏi nhanh hơn, nhưng Đức cho thấy chụp ảnh **lâu hơn** hover/hỏi trực tiếp | Nhóm lo khung chat làm tester ngồi chờ AI ở Option A — **không xảy ra**, gõ ngay sau 3 giây | *(chưa có)* | Cả hai kỳ vọng bị bác đều là kỳ vọng về **tốc độ và độ chủ động**, không phải về nội dung |
 
-**Một Next Change nhóm chốt:** Việc nhóm quyết định làm tiếp theo là cho hỏi AI ngay trên vùng ảnh bằng cách bấm hoặc rê chuột vào, thay vì cứ phải khoanh vùng trước như bây giờ. Đây là thay đổi cụ thể và dễ bắt tay vào làm nhất trong ba thứ đang có, áp dụng cho cả Option B và C.
+### Đã sửa gì so với bản Bảo gửi
 
-**Evidence nào dẫn tới quyết định này:** Ba lượt hỏi đều là người thật nhưng mỗi người chỉ ra một điểm khác nhau. Đức nói thẳng thao tác hỏi đáp hiện tại hơi chậm, muốn có cách hỏi ngay trên ảnh thay vì phải chụp trước. Người Huy khảo sát nói *"muốn có 1 file chung để tổng hợp ghi chú mà họ đã hỏi để họ có thể hệ thống lại các vấn đề và mẫu AI tổng hợp ghi chú đó sẽ phân tích về phần họ hỏi nhiều nhất"*. Còn người Cường khảo sát nói *"mong muốn có một dấu hiệu nhận biết ở phần B để có thể AI nhận biết rằng mình đang khúc mắc chỗ nào và có thể hỏi mình xem có cần nó trợ giúp hay không"* — đáng chú ý là câu này khớp gần như y hệt tính năng AI tự bật popup hỏi thăm sau 10 giây mà nhóm đã làm sẵn ở Option B, chỉ khác là người này chưa hề dùng thử tính năng đó mà tự đề xuất độc lập. Nhóm chọn làm trước cái đầu tiên (hỏi trực tiếp trên ảnh) vì nó rõ ràng và làm được ngay, hai cái còn lại cần bàn thêm.
+| Ô | Bản gửi ban đầu | Sửa thành | Căn cứ |
+|---|---|---|---|
+| FB2 · First action | *"Thực hiện thao tác hỏi đáp với AI"* | Đảo option 4 phút; vào A gõ sau 3 giây | Nhật ký, [prototype-feedback-note.md](prototype-feedback-note.md) |
+| FB2 · Breakdown | *"Muốn 1 file chung gom ghi chú đã hỏi, AI tổng hợp phân tích phần hỏi nhiều nhất"* | Dừng 7'36" trên Option C | Nội dung cũ không có trong biên bản phiên Huy |
+| FB2 · Lấy lại control | *"Chỉ góp ý bằng lời, không dùng nút sửa/rollback nào"* | Có bấm rollback, sửa, đổi thẻ — kèm mốc giờ | Nhật ký ghi rõ ba thao tác |
+| FB2 · Option được chọn | **B** | **C + D** | Nguyên văn tester: *"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm... giống option D thì hay hơn"* |
+| FB2 · Trade-off | *"Chỉ muốn nhờ AI khi thực sự thấy khó hiểu…"* | Chưa hỏi được | Không có câu trade-off nào trong biên bản |
+| FB3 · cả cột | Có nội dung | *(chưa có Feedback Note)* | Cường chưa nộp note nào vào repo — chưa đối chứng được |
+| Thêm hàng | — | *Prototype đã dùng* | Hai phiên chạy hai bản khác nhau, phải nói rõ |
 
-**Still Unproven sau ba feedback:** Ba người không lặp lại cùng một vấn đề, nên chưa thể coi đây là một pain point đã được xác nhận qua nhiều nguồn độc lập — vẫn là ba tín hiệu rời rạc, mỗi người một hướng. Hai đề xuất còn lại (gom ghi chú vào một chỗ kèm phân tích hỏi nhiều nhất, và để AI tự nhận biết chỗ khúc mắc ở Option B) chưa được nhóm quyết định có làm tiếp hay không. Cũng chưa ai kiểm tra xem đổi sang bấm/hover trên ảnh có thực sự tốt hơn hay lại gây khó chịu kiểu khác, và tính năng popup 10 giây ở Option B — dù vừa được một người độc lập đề xuất trùng ý — vẫn chưa ai thật sự trải nghiệm để biết cảm giác lúc nó bật lên có ổn không.
+> **Cường:** nếu bạn có chạy phiên thật thì viết Feedback Note rồi mình điền lại cột 3. Hiện
+> để trống chứ không bỏ, vì có thể buổi đó có thật mà chưa kịp ghi.
+
+---
+
+## Next Change
+
+> **Cho hỏi ngay tại chỗ đang vướng** — bấm hoặc rê vào đúng vùng trên nội dung là được giải
+> thích luôn, thay vì phải khoanh vùng hay chụp ảnh trước. Áp dụng cho cả Option B và C.
+
+Đây là bản Bảo đề xuất, và nhóm giữ nguyên — xem [group-feedback-synthesis.md](group-feedback-synthesis.md) mục 4.
+
+**Evidence dẫn tới quyết định này — mạnh hơn bản ban đầu tưởng.**
+
+Bản gửi ban đầu kết luận *"ba người chỉ ra ba việc khác nhau, không lặp lại thành một pain point
+chung"*. Đọc lại với dữ liệu đã sửa thì ngược lại: **ba nguồn độc lập cùng đòi một cơ chế.**
+
+> **Đức** — *chưa từng nhìn thấy Option D*: *"nên thêm nút "?" để khi ấn vào hình ảnh thì có thể
+> hỏi đáp luôn tại đó thay vì chụp ảnh như hiện tại"*
+
+> **anh Coach Lab** (phiên Huy): *"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng
+> mở rộng thêm hướng chọn mục để mở giống option D thì hay hơn"*
+
+> **Tester của Quân:** *"D bấm đúng chỗ chưa hiểu là xong, nhanh"* — và hành vi khớp: sang D là
+> bấm ngay mẩu đánh dấu chưa hiểu.
+
+Ba người, ba cách nói, một cơ chế — và đó chính là **Option D**. Đức mạnh nhất trong ba, vì mô
+tả đúng cơ chế của D mà chưa hề được xem nó.
+
+## Still Unproven
+
+- **Chưa ai thử Option D trên bộ API thật** — Next Change lại dựng trên cơ chế của D.
+- **Con số "2 chọn B, 1 chọn C" không dùng được**: Đức không có D để chọn, và thứ Đức muốn là D.
+- **Chưa biết bấm/rê trên ảnh có thật sự tốt hơn không**, hay chỉ đổi sang một kiểu khó chịu khác.
+- **Tính năng popup 10 giây ở Option B** — dù một người độc lập đề xuất trùng ý — vẫn chưa ai
+  thật sự trải nghiệm lúc nó bật lên.
+- **Hai đề xuất còn lại chưa quyết**: gom ghi chú vào một chỗ kèm phân tích hỏi nhiều nhất; để
+  AI tự nhận biết chỗ khúc mắc ở Option B.
+- **Chưa nguồn nào cho hậu quả định lượng** — không giờ, không điểm, không lần hỏng việc nào.
 
 ---
 
