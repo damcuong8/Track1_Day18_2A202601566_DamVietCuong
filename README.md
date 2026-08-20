@@ -108,7 +108,9 @@ observation focus, bảng xoay vòng thứ tự, và bản chạy tay. Chạy bu
 **Tổng hợp feedback.** Đối chiếu feedback với nhật ký hành vi, viết
 [06-test-record.md](06-test-record.md) và [group-feedback-synthesis.md](group-feedback-synthesis.md).
 
-**Tích hợp bài của nhóm.** Review và gộp các pull request: nhận phần của Quân (Option D), và với
+**Tích hợp bài của nhóm.** Nhận Feedback Note của Bảo vào repo, và đối chiếu bảng tổng hợp của bạn ấy với nhật ký hành vi — phát hiện hai ô ghi về phiên của tôi ngược với dữ liệu thật, đã ghi lại để nhóm xử lý.
+
+**Review pull request.** Review và gộp các pull request: nhận phần của Quân (Option D), và với
 PR của Bảo thì **chỉ lấy phần UI** — PR đó xoá 21 file gồm toàn bộ tài liệu từng chặng, thư mục
 `day17-inputs` và cả Option D, nên không nhận phần xoá.
 
@@ -138,43 +140,46 @@ Cắt giao diện theo lời nói sẽ giữ lại đúng cái nút không ai d�
 
 Đầy đủ: [group-feedback-synthesis.md](group-feedback-synthesis.md).
 
-**Hiện mới có hai Feedback Note** (Huy, Quân), chưa đủ ba như Gate 5 yêu cầu — Cường và Bảo chưa
-chạy phiên nào.
+**Đủ ba Feedback Note** từ ba tester ngoài nhóm: Huy → anh Coach Lab, Quân → một bạn cùng lớp,
+Bảo → Đức. Hai phiên đầu chạy trên bản chung canned (đủ bốn option); phiên của Bảo chạy trên bộ
+gọi API thật **trước khi có Option D**, nên tester đó không được xem D.
 
-Ba chỗ hai phiên trùng nhau:
+**Pattern mạnh nhất — ba nguồn độc lập cùng đòi một cơ chế:** được hỏi ngay tại chỗ đang vướng.
 
-1. Cả hai tester **chọn C và D, bỏ A và B**.
-2. **Không ai bấm *Giữ* ở Option B** — không phiên nào chốt xong bộ thẻ.
-3. **Badge nguồn và tag *"AI không chắc"* không được đọc.** Nếu đúng, Option C hiện **không có
-   hàng rào nào đang hoạt động** — trái với chính lý do nhóm đặt hàng rào đó ở Chặng 3.
+- Đức, **chưa từng thấy Option D**: *"nên thêm nút "?" để khi ấn vào hình ảnh thì có thể hỏi đáp
+  luôn tại đó thay vì chụp ảnh như hiện tại"*
+- Coach Lab: *"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm hướng
+  chọn mục để mở giống option D thì hay hơn"*
+- Tester của Quân: *"D bấm đúng chỗ chưa hiểu là xong, nhanh"* — và hành vi khớp lời nói.
 
-Chỗ hai phiên mâu thuẫn: một tester dồn chú ý vào mẩu *"chưa hiểu"*, tester kia gần như bỏ qua
-nó — nhưng tester kia đã nắm sẵn nội dung mẩu đó, nên chưa đọc được gì từ chỗ này.
+Đức mô tả đúng cơ chế Option D mà chưa hề nhìn thấy nó.
 
-Cả hai tester đều **tự ghép C với D** thay vì chọn một option. Nguyên văn phiên của Huy:
-*"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm hướng chọn mục để
-mở giống option D thì hay hơn"*.
+Hai pattern còn lại: **không phiên nào chốt xong bộ thẻ ở Option B**, và **tín hiệu evidence
+gần như không được dùng tới** — hai trên ba phiên chưa cho thấy badge nguồn được đọc.
+
+> **Một chỗ dữ liệu xung đột, chưa xử lý xong.** Bảng đối chiếu của Bảo ghi phiên của Huy chọn
+> Option B và *"không dùng nút sửa/rollback nào"*. Nhật ký hành vi phiên đó cho thấy ngược lại:
+> chọn C+D, và có bấm rollback, sửa, đổi thẻ. Nhóm cần hỏi lại Bảo cột đó lấy từ đâu — chi tiết
+> ở [group-feedback-synthesis.md](group-feedback-synthesis.md) mục 1.1.
 
 ### Next Change
 
-> **Bỏ bước duyệt từng thẻ ở Option B. Thay bằng: AI đưa cả bộ ở trạng thái đã nhận sẵn, người
-> dùng chỉ can thiệp vào thẻ nào thấy sai.**
+> **Cho hỏi ngay tại chỗ đang vướng — bấm hoặc rê vào đúng vùng là được giải thích luôn — thay
+> vì phải khoanh vùng hay chụp trước.** Áp dụng cho cả Option B và C.
 
-Chọn theo chỗ evidence chắc nhất — hai phiên đều không chốt được bộ thẻ nào, và cả hai đều ngả
-về C và D, hai option **không bắt duyệt gì**. Chi phí duyệt là thứ đang bị từ chối, không phải
-số lượng nút.
+Chốt theo pattern có ba nguồn độc lập trùng nhau. Nó chính là cơ chế của Option D, nên nhóm
+không phải phát minh gì mới, chỉ đưa cách tương tác của D vào B và C.
 
 ### Still Unproven
 
-- Hypothesis Problem **chưa được kiểm chứng**. Hai phiên đo *interaction*, không đo *value*.
+- Hypothesis Problem **chưa được kiểm chứng**. Ba phiên đo *interaction*, không đo *value*.
 - **Chưa nguồn nào cho hậu quả định lượng.**
-- Mẩu *"chưa hiểu"* có phải trọng tâm không — hai tester cho hai câu trả lời ngược nhau.
-- Tag *"AI không chắc"* có tác dụng không — hai tín hiệu ngược nhau, chưa phân biệt được.
-- Bộ prototype gọi API thật chưa được test với ai.
+- **Con số "2 chọn C+D, 1 chọn B" không đọc được như nó trông** — Đức không có D để chọn.
+- **Option D trên bộ API thật chưa ai thử**, mà Next Change lại dựng trên cơ chế của D.
+- Tín hiệu *"AI không chắc"* có tác dụng không — hai trên ba phiên chưa cho thấy nó được đọc.
+- Cả ba tester đều đã biết sẵn nội dung bài học dùng làm fixture.
 
 **Không tuyên bố** *"User đã xác nhận solution này đúng."*
-
----
 
 ## 6. AI Support Log
 
