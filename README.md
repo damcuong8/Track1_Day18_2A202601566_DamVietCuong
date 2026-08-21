@@ -70,11 +70,13 @@ situation, cùng task, cùng ba mẩu fixture.
 
 **Link prototype** — chi tiết ở [prototype-link.md](prototype-link.md):
 
-- **Bộ prototype gọi API thật (đầy đủ 4 options):** [proA](proA.html) · [proB](proB.html) · [proC](proC.html) · [proD](proD.html)
+- **Bản chung bốn option (canned output cho vòng so sánh):** [prototype/index.html](prototype/index.html)
+- **Bộ prototype gọi OpenAI API thật (đầy đủ 4 options):** [proA](proA.html) · [proB](proB.html) · [proC](proC.html) · [proD](proD.html)
 - **Bản đào sâu Option B của Cường (UI/UX Pro Max):** [prototype-option-b.html](prototype-option-b.html)
 
 Thiết kế: [three-option-design-sheet.md](three-option-design-sheet.md) ·
 [02-three-solution-options.md](02-three-solution-options.md) ·
+[03-human-ai-design-pass.md](03-human-ai-design-pass.md) ·
 [03-human-ai-design-damvietcuong.md](03-human-ai-design-damvietcuong.md)
 
 ---
@@ -89,7 +91,7 @@ Thiết kế: [three-option-design-sheet.md](three-option-design-sheet.md) ·
 
 **Human–AI Design Pass.** Viết [03-human-ai-design-damvietcuong.md](03-human-ai-design-damvietcuong.md), phân tích 4 quyết định thiết kế cho Option B, xác định ranh giới can thiệp an toàn (Ask & Propose) và thiết lập đường khôi phục dữ liệu tức thì (*Recovery Path*).
 
-**Facilitation & Feedback.** Trực tiếp thực hiện phiên Solution Testing với Tester (bạn Nguyễn Văn Nam), ghi nhận hành vi thao tác thực tế và hoàn thành [prototype-feedback-note.md](prototype-feedback-note.md). Cùng nhóm đối chiếu 4 phiên test để hoàn thiện [group-feedback-synthesis.md](group-feedback-synthesis.md).
+**Facilitation & Feedback.** Trực tiếp thực hiện phiên Solution Testing với Tester (bạn Nguyễn Văn Nam), ghi nhận hành vi thao tác thực tế và hoàn thành [06-prototype-feedback-damvietcuong.md](06-prototype-feedback-damvietcuong.md). Cùng nhóm đối chiếu 4 phiên test độc lập để hoàn thiện [group-feedback-synthesis.md](group-feedback-synthesis.md).
 
 ---
 
@@ -97,7 +99,7 @@ Thiết kế: [three-option-design-sheet.md](three-option-design-sheet.md) ·
 
 ### Observation từ phiên tôi facilitate (Đàm Việt Cường facilitate)
 
-Chi tiết: [prototype-feedback-note.md](prototype-feedback-note.md).
+Chi tiết: [06-prototype-feedback-damvietcuong.md](06-prototype-feedback-damvietcuong.md).
 
 - **Tester:** Nguyễn Văn Nam (Học viên lớp AI thực chiến, thường xuyên dùng Notion/Docs).
 - **Hành vi quan sát:**

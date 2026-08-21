@@ -15,7 +15,41 @@ Dựng theo [Chặng 2](02-three-solution-options.md) và [Chặng 3](03-human-a
 | Bản chung bốn option | Lê Quang Huy dựng khung; Hoàng Minh Quân thêm D | A, B, C, D — chuyển qua lại bằng nút | [prototype/index.html](prototype/index.html) |
 | Bản riêng Option B | Đàm Việt Cường | Chỉ B, có thêm màn luyện tập trắc nghiệm thật | [prototype-option-b.html](prototype-option-b.html) |
 | Option C | Trần Đức Bảo | Chưa có bản riêng; C nằm trong bản chung | — |
-| Option D | Hoàng Minh Quân | Chỉ D; đã dựng thẳng vào bản chung | [prototype/index.html](prototype/index.html) |
+| Option D | Hoàng Minh Quân | Chỉ D; dựng thẳng vào bản chung. Thiết kế riêng ở [03-human-ai-design-hoangminhquan.md](03-human-ai-design-hoangminhquan.md) | [prototype/index.html](prototype/index.html) |
+
+### 1.1. Bản thứ hai — bộ prototype gọi AI thật (Trần Đức Bảo dựng)
+
+Ngoài bản chung ở trên, nhóm còn một bộ prototype thứ hai **chạy trên slide thật và gọi
+OpenAI API thật**, thay vì canned output.
+
+| File | Option | Ghi chú |
+|---|---|---|
+| [proA.html](proA.html) | A | Người dùng tự làm hết, có notepad |
+| [proB.html](proB.html) | B | AI chủ động hỏi thăm và đề xuất |
+| [proC.html](proC.html) | C | AI tự soạn ngay khi mở trang |
+| [proD.html](proD.html) | D | AI im cho tới khi người dùng khoanh một chỗ trên slide |
+
+Dùng chung `assets/core.js` (khung, slide, khoanh vùng), `assets/ai.js` (cầu nối API),
+`assets/chat.js`, `assets/notes.js`, `assets/notesview.js`.
+
+**Cách chạy:** `cp .env.example .env`, dán `OPENAI_API_KEY` vào `.env`, rồi `python serve.py`
+và mở `http://localhost:8000/proA.html`. Key nằm ở phía server, không xuống trình duyệt.
+`.env` đã nằm trong `.gitignore` — **không commit key vào repo**.
+
+**Option D dựng theo thiết kế của Quân** ([03-human-ai-design-hoangminhquan.md](03-human-ai-design-hoangminhquan.md)):
+AI không sinh gì khi mở trang; người dùng khoanh một vùng trên slide thì mới sinh **đúng một**
+lời giải cho vùng đó, kèm trích chữ trên slide để đối chiếu. Có *Giải thích dễ hơn*, *Chỉ chỗ
+khác*, và *Đóng, về slide*. Nếu vùng khoanh không trùng thành phần nào rõ ràng, lời giải mang
+nhãn **"AI không chắc"** — giữ đúng quyết định uncertainty ở [Chặng 3](03-human-ai-design-pass.md) mục 2.3.
+
+> **Bộ này gọi model thật, nên khác bản chung ở một điểm ảnh hưởng tới phương pháp:** hai tester
+> chạy cùng một option sẽ **không nhận được cùng một nội dung**. Yêu cầu *"cùng ngữ cảnh, cùng
+> task"* ở [Chặng 5](05-test-prep.md) chỉ còn đúng ở phần slide và task, không còn đúng ở phần
+> AI sinh ra. Feedback đầu tiên đã chạm vào đúng chỗ này: *"tính năng hỏi đáp đang hơi chậm"*
+> ([feedback.md](feedback.md)) — độ trễ là thứ bản canned không có.
+>
+> **Quyết định:** vòng so sánh bốn option vẫn chạy trên **bản chung** (canned, tái lập được).
+> Bộ gọi API thật dùng để đào sâu sau đó, khi cần xem chất lượng nội dung thật.
 
 **Quyết định cho buổi test:** chạy trên **bản chung**, vì đề yêu cầu tester làm cùng một task
 trên cùng một ngữ cảnh ở cả bốn option. File riêng thì mỗi lần chuyển option là đổi luôn
@@ -89,6 +123,7 @@ Cột phải ghi lại tester **đã làm gì**, kèm mốc thời gian và opti
 12:38:44  [A]  bắt đầu gõ nội dung cho thẻ quiz
 12:39:02  [B]  bỏ thẻ giải thích: "Vì sao Problem Hypothesis phải c…"
 12:40:15  [C]  rollback — bỏ bản AI soạn, quay về ghi chú thô
+12:41:02  [D]  chọn mẩu Ảnh chụp + Chưa hiểu · Slide 11 — chỗ đánh dấu chưa hiểu
 ```
 
 Nút *Copy nhật ký* xuất ra dạng tab-separated để dán thẳng vào biên bản test.
@@ -101,9 +136,13 @@ liệu dẫn nhóm sang *"tester nói thích cái này"*.
 
 ## 4. Dữ liệu trong prototype
 
-Ba mẩu ghi chú và toàn bộ nội dung AI là **content fixture và canned output viết sẵn**, đúng
-phạm vi mục 10 của đề cho phép. Không gọi model thật, không có dữ liệu người dùng thật, không
-gọi mạng. Một file HTML mở thẳng bằng trình duyệt.
+**Bản chung** — ba mẩu ghi chú và toàn bộ nội dung AI là **content fixture và canned output
+viết sẵn**, đúng phạm vi mục 10 của đề cho phép. Không gọi model thật, không có dữ liệu người
+dùng thật, không gọi mạng. Một file HTML mở thẳng bằng trình duyệt.
+
+**Bộ proA/B/C/D** — gọi OpenAI API thật, nội dung sinh ra mỗi lần một khác. Không có dữ liệu
+người dùng thật: thứ gửi lên là **chữ trên slide mẫu**, không gửi ảnh, không gửi ghi chú cá
+nhân của ai. API key nằm trong `.env` phía server, `.env` đã bị `.gitignore` chặn.
 
 Trạng thái chỉ nằm trong bộ nhớ trang: tải lại trang là mất. Cố ý — để không có dữ liệu buổi
 test nào bị giữ lại ngoài nhật ký người ghi chép chủ động copy ra.
@@ -129,4 +168,9 @@ test nào bị giữ lại ngoài nhật ký người ghi chép chủ động co
 - Hai ý trong bản của Bảo chưa nhập vào bản chung: nhãn *"câu hỏi tự sinh, chưa qua duyệt"*
   tách phần AI sinh mới khỏi phần trích nguyên văn, và auto-save bản gốc **trước khi** AI xử
   lý — cái sau nối thẳng vào evidence #6 (Mai mất file vì quên Ctrl+S).
-- Chưa chạy buổi test nào. Chưa có dòng *"Tester đã làm…"* nào.
+- Bộ proA/B/C/D chưa được chạy thử với tester nào; feedback duy nhất về nó là dòng của Đức
+  trong [feedback.md](feedback.md) về độ trễ và về nút "?" hỏi ngay trên ảnh — ý thứ hai chính
+  là hành vi Option D đang làm, nên đáng đối chiếu lại.
+- README của Bảo trong PR #9 gộp mọi thứ về một file và xoá toàn bộ tài liệu từng chặng cùng
+  thư mục `day17-inputs`; nhóm **không** nhận phần đó, chỉ nhận phần UI. Nếu có nội dung trong
+  bản README ấy cần giữ thì bê từng đoạn sang, đừng thay cả cây tài liệu.

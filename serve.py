@@ -5,7 +5,7 @@ serve.py — chạy ba prototype ở http://localhost:8000 và giữ API key ở
 Cách dùng:
     1. copy .env.example .env      rồi dán OPENAI_API_KEY thật vào .env
     2. python serve.py
-    3. mở http://localhost:8000/proA.html  (hoặc proB.html / proC.html)
+    3. mở http://localhost:8000/proA.html  (hoặc proB.html / proC.html / proD.html)
 
 Vì sao cần file này:
     - Trình duyệt không đọc được file .env, nên phải có một tiến trình đọc hộ.
@@ -166,6 +166,7 @@ def main() -> None:
     print("  Mở:  http://localhost:%d/proA.html" % PORT)
     print("       http://localhost:%d/proB.html" % PORT)
     print("       http://localhost:%d/proC.html" % PORT)
+    print("       http://localhost:%d/proD.html" % PORT)
     print("  Dừng server: Ctrl + C")
     print("=" * 62)
     try:

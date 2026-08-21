@@ -1,5 +1,5 @@
 /* ==========================================================================
-   core.js — phần dùng chung của 3 prototype (proA / proB / proC)
+   core.js — phần dùng chung của 4 prototype (proA / proB / proC / proD)
 
    Gồm: dữ liệu ghi chú mẫu, khung màn hình 1 trang (không cuộn),
         thu/phóng slide 0.8x–1.5x, chuyển trang slide,
@@ -190,7 +190,7 @@
     );
 
     var sw = el('div', 'switch');
-    ['A', 'B', 'C'].forEach(function (k) {
+    ['A', 'B', 'C', 'D'].forEach(function (k) {
       var a = el('a', k === cfg.option ? 'cur' : '', 'Option ' + k);
       a.href = 'pro' + k + '.html';
       sw.appendChild(a);

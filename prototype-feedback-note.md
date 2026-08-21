@@ -1,43 +1,105 @@
-# Prototype Feedback Note — Phiên Test Cá Nhân
+# Prototype Feedback Note — Lê Quang Huy
 
-**Người thực hiện facilitate:** Đàm Việt Cường (MHV: 2A202601566)  
-**Mã tester:** Tester 01 — Nguyễn Văn Nam (Học viên lớp AI thực chiến, thường xuyên dùng Notion và Google Docs)  
-**Thời gian thực hiện:** 2026-08-18 (20 phút)  
-**Tình huống và Nhiệm vụ (Outcome Task):**  
-> *"Tối trước buổi học tiếp theo, bạn mở hệ thống để ôn lại bài học số 17. Hãy dùng cả ba phương án (Option A, Option B, Option C) để tự chuẩn bị bài và ôn tập những điểm bạn còn chưa vững trước giờ thực hành."*
+**Người facilitate:** Lê Quang Huy — 2A202601821  
+**Nhóm:** cuong · **Case B** — AI Notes: Personal Learning Notes  
+**Prototype:** [prototype/index.html](prototype/index.html) — bản chung bốn option  
+**Ngày:** 19/08/2026  
+
+**Tester:** anh Coach Lab — **chưa kịp hỏi tên**  
+**Ngoài nhóm:** Có. Không phải thành viên nhóm, không phải interviewee Day 17.  
+**Có context liên quan:** Có — cũng là sinh viên, vẫn đang đi học và ôn bài.  
+
+> **Đúng chân dung target user.** Anh Coach Lab cũng là học sinh — sinh viên, cũng ôn bài như
+> đối tượng mô tả trong Hypothesis Problem. Vai trò coach là việc bạn ấy làm thêm, không làm
+> bạn ấy thôi là người trải nghiệm thật.
+>
+> Một điểm cần nhớ khi đọc kết quả: bạn ấy **đã nắm nội dung bài học** dùng làm fixture. Xem
+> mục "Giới hạn của phiên này".
+
+**Thứ tự mở option:** D → C → A → B, sau đó đảo qua lại nhiều lần  
+**Thời lượng:** 10:09:38 → 10:22:57 — 13 phút 19 giây  
 
 ---
 
-## 1. Bảng ghi chép Quan sát Thực tế (Observation Table)
+## Observation
 
-| Tiêu chí quan sát | Ghi chép chi tiết từ Tester 1 (Nguyễn Văn Nam) |
+| Observation | Note |
 |---|---|
-| **Hành động đầu tiên (First Action)** | - **Option A (`proA.html`):** Bấm mở khay ghi chú, kéo thử 1 đoạn text vào khung trống, sau đó dừng lại khi thấy phải tự gõ lời giải thích.<br>- **Option B (`proB.html`):** Đọc slide 11 khoảng 10 giây, thấy thẻ hỏi *"Bạn có cần trợ giúp với slide này không?"* hiện ra thì bấm ngay `[✓ Có, giúp mình với]`. Sau đó thử bấm làm câu trắc nghiệm số 1.<br>- **Option C (`proC.html`):** Vừa mở trang thấy bài tóm tắt và 3 câu hỏi hiện ra ngay, liền đọc lướt câu 1 và bấm chọn đáp án. |
-| **Chỗ dừng, do dự hoặc hiểu sai (Hesitation / Misunderstanding)** | - **Option A:** Do dự ở bước gõ chữ, nói: *"Tối muộn rồi mà phải tự ngồi gõ lại tóm tắt với câu hỏi thế này thì lười lắm, không có động lực làm"**.<br>- **Option B:** Khựng lại 3 giây khi thấy AI yêu cầu quyền đọc slide, nhưng gật đầu đồng ý vì thấy câu hỏi xuất hiện rất đúng lúc mình đang dừng lại đọc.<br>- **Option C:** Do dự không biết nội dung AI tóm tắt có bị thiếu ý quan trọng của thầy trên lớp không. |
-| **Bằng chứng được đọc hay bỏ qua (Evidence Read / Ignored)** | - **Option A:** Đọc lướt text trong khay ghi chú.<br>- **Option B:** Đọc kỹ phần giải thích *vì sao đúng / vì sao sai* ở câu trắc nghiệm sau khi chọn đáp án; thử bấm tab *Trò chuyện* để gõ hỏi thêm 1 câu.<br>- **Option C:** Bỏ qua phần tóm tắt dài ở trên, nhảy thẳng vào làm quiz. |
-| **Cách tester sửa hoặc lấy lại quyền kiểm soát (Control & Recovery)** | - **Option A:** Tự xóa ô text để gõ lại.<br>- **Option B:** Thử bấm nút `[↻ Soạn lại]` để xem AI có đổi câu hỏi khác không; nhìn thấy nút `[Thu hồi — về lại im lặng]` và nói: *"Nút này hay, nếu không muốn AI làm phiền nữa thì tắt được ngay"**.<br>- **Option C:** Bấm nút `[Quay lại ghi chú gốc]` để kiểm tra xem ghi chú cũ có còn nguyên không. |
-| **Option được chọn (Choice)** | **Option B (AI chủ động hỏi thăm & Co-Creation)** |
-| **Lý do và Trade-off chấp nhận** | - **Lý do:** *"Option B cho cảm giác tự nhiên nhất. AI không nhảy bổ vào mặt khi mình chưa cần, nhưng đúng lúc mình dừng lại đọc kỹ thì nó lên tiếng hỏi giúp. Có đủ cả tóm tắt, câu hỏi và chỗ chat hỏi thêm."*<br>- **Trade-off chấp nhận:** Chấp nhận mất 1 click bấm *"Có, giúp mình với"* để đổi lại sự thoải mái và quyền kiểm soát. |
-| **Evidence chống lại kỳ vọng ban đầu** | Ban đầu nhóm dự đoán Option C (1-click có sẵn) sẽ được chọn vì nhanh nhất, nhưng tester lại cảm thấy Option C hơi "vội vã" và làm mất cảm giác tự học; tester thích sự tương tác từng bước của Option B hơn. |
+| **First action** | **A:** mở ra là **gõ ngay sau 3 giây**, không chờ máy nói.<br>**D:** 13 giây rồi chọn mẩu đầu tiên.<br>**B, C:** không có thao tác nào trong lượt mở đầu — bốn phút đầu buổi chỉ đảo option, 10 lần chuyển, không làm gì. |
+| **Chỗ dừng, do dự hoặc hiểu sai** | **C: dừng 7 phút 36 giây** (10:13:51 → 10:21:27) không thao tác nào — khối thời gian dài nhất buổi, hơn nửa buổi test. Nhật ký không phân biệt được đang đọc kỹ, đang nói chuyện, hay đang bí. *(người facilitate cần bổ sung)* |
+| **Evidence được đọc hay bỏ qua** | Không đo trực tiếp được — nhật ký chỉ ghi thao tác có bấm, không ghi cuộn hay rê chuột. **Dấu hiệu gián tiếp:** mẩu *Ghi chú ngắn · Slide 7* — mẩu duy nhất mang tag đỏ *"AI không chắc"* — là mẩu được quay lại ở **cả ba option có thao tác**: gắn vào thẻ ở A, thẻ bị sửa và bị đổi ở B, và là mẩu duy nhất được xin *"giải thích dễ hơn"* ở D. Trong khi mẩu *Ảnh chụp + Chưa hiểu · Slide 11* chỉ mở **4 giây** rồi thôi. |
+| **Cách tester sửa hoặc lấy lại control** | **B:** bấm *Sửa* rồi *Đổi thẻ khác* — **không** bấm *Giữ*, **không** bấm *Bỏ*.<br>**C:** đổi mục tiêu sang "Ôn nhanh 5 phút", rồi **rollback sau đúng 4 giây**.<br>**D:** xin *giải thích dễ hơn* → *đóng, về ba mẩu* → chọn lại mẩu khác.<br>**A:** gửi một thẻ nhưng **0 mẩu gắn kèm**; gắn nguồn cho thẻ kế rồi bỏ dở. |
+| **Option được chọn** | **C và D** — tester đề nghị gộp hai cái |
+| **Lý do và trade-off** | *(người facilitate cần bổ sung — hiện chỉ có phần tester đề xuất, chưa có câu trả lời "đổi lại mất gì")* |
+| **Evidence chống lại kỳ vọng của nhóm** | **Ba chỗ.** (1) Tester nói giữ hai nút *giữ / sửa* ở B, nhưng hành vi cho thấy hai nút thật sự dùng là *sửa / đổi* — nút *giữ* **chưa bấm lần nào**. (2) Nhóm lo khung chat làm tester ngồi chờ AI ở Option A — **không xảy ra**, gõ ngay sau 3 giây. (3) Mẩu *"chưa hiểu"* — thứ cả Hypothesis Problem xoay quanh — gần như bị bỏ qua, trong khi mẩu ghi chú ngắn mới là chỗ tester quay lại nhiều nhất. |
+
+**Câu tester nói, nguyên văn:**
+
+> "option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm hướng chọn mục để
+> mở giống option D thì hay hơn"
+
+> Đây là **đề xuất thiết kế** của tester, không phải quan sát hành vi. Ghi nguyên văn để giữ
+> đúng lời; xếp vào cột "tester nói", không được đọc thành kết quả kiểm chứng.
+
+**Các ý còn lại, thuật lại** (chưa có nguyên văn):
+
+- Nếu làm theo B thì giảm giao diện xuống còn **hai nút**: *giữ thẻ* hoặc *sửa thẻ*.
+- Thích hơn một phương án **gộp C với D**.
+- Cơ chế mong muốn: sau khi AI tổng hợp, **AI tự xác định chỗ nào chưa logic hoặc thiếu thông
+  tin**, **hỏi lại người dùng**, rồi liệt kê thành từng mục; bấm vào một mục thì AI **giải
+  thích tường minh** phần đó.
 
 ---
 
-## 2. Phân tích Tách biệt 4 Lớp (Four-Layer Synthesis)
+## Nhật ký thao tác
 
-```text
-OBSERVED (Quan sát thực tế):
-- Tester dành phần lớn thời gian (10/18 phút) để trải nghiệm Option B: thử trả lời quiz, xem phần giải thích lỗi sai, và thử gõ câu hỏi vào tab "Trò chuyện".
-- Tester bấm thử nút "Thu hồi" ở Option B để xác nhận xem hệ thống có thực sự quay về trạng thái im lặng không.
-- Tester từ chối Option A vì quá tốn công tự soạn, và dè dặt với Option C vì sợ học vẹt theo AI.
+Nguyên văn, xuất bằng nút *Copy nhật ký*. Bản đầy đủ kèm phân tích ở
+[06-test-record.md](06-test-record.md).
 
-INTERPRETED (Nhóm diễn giải ý nghĩa):
-- Cơ chế Dwell Trigger (chờ 10s hoặc phát hiện ghi chú mới mới hỏi) của Option B tạo ra cảm giác "AI có mắt quan sát tinh tế" chứ không phải là một công cụ spam tự động.
-- Người học cần một trợ lý đồng hành (Co-Pilot) vừa có khả năng tóm tắt/quiz, vừa cho phép trò chuyện đào sâu ngay khi cần.
-
-DECIDED — NEXT CHANGE (Quyết định thay đổi ở iteration tiếp theo):
-- Giữ vững kiến trúc cốt lõi của Option B.
-- Bổ sung thêm tính năng: Cho phép bấm trực tiếp vào một vùng hình ảnh trên slide (Point & Ask) để gửi vào ô chat thay vì chỉ gõ chữ chung chung.
-
-STILL UNPROVEN (Điều vẫn chưa chứng minh được từ 1 tester):
-- Chưa chứng minh được liệu trong thực tế dài hạn, tester có kiên nhẫn làm hết 4 câu trắc nghiệm sau mỗi slide hay chỉ làm 1-2 slide rồi thôi.
 ```
+10:13:51	[C]	chuyển sang option C
+10:21:27	[C]	đổi mục tiêu sang "Ôn nhanh 5 phút"
+10:21:31	[C]	rollback — bỏ bản AI soạn, quay về ghi chú thô
+10:22:04	[D]	chọn mẩu Highlight · Slide 3
+10:22:06	[D]	chọn mẩu Ghi chú ngắn · Slide 7
+10:22:09	[D]	chọn mẩu Ảnh chụp + Chưa hiểu · Slide 11 — chỗ đánh dấu chưa hiểu
+10:22:16	[A]	bắt đầu gõ nội dung cho thẻ tóm tắt
+10:22:26	[A]	gửi thẻ tóm tắt vào sổ — 0 mẩu gắn kèm
+10:22:41	[B]	sửa tay thẻ tự kiểm tra, nguồn Ghi chú ngắn · Slide 7
+10:22:45	[B]	bấm đổi thẻ khác, nguồn Ghi chú ngắn · Slide 7
+10:22:52	[D]	xin bản giải thích dễ hơn cho Ghi chú ngắn · Slide 7
+10:22:54	[D]	đóng lời giải — Ghi chú ngắn · Slide 7, quay về ba mẩu thô
+```
+
+---
+
+## Kết luận được phép
+
+> Với Hypothesis Problem này, chúng tôi đã thử bốn cách giải. Tester đã dành hơn nửa buổi trên
+> Option C, thao tác nhiều nhất trên Option D, rollback ở C sau 4 giây, gõ ngay ở A mà không
+> chờ AI, và quay lại mẩu Slide 7 ở cả ba option có thao tác trong khi gần như bỏ qua mẩu đánh
+> dấu "chưa hiểu". Vì vậy iteration tiếp theo chúng tôi sẽ chạy lại Option B với thời lượng đủ
+> để tester duyệt hết thẻ trước khi kết luận nút nào thừa, và hỏi vì sao mẩu "chưa hiểu" lại là
+> mẩu ít được mở nhất.
+
+**Không viết:** *User đã xác nhận solution này đúng.*
+
+---
+
+## Giới hạn của phiên này
+
+- **Tester đã biết sẵn nội dung bài học dùng làm fixture.** Ba mẩu ghi chú lấy từ bài Day 17,
+  mà anh Coach Lab thì đã nắm phần đó. Điều này giải thích được một chỗ trong nhật ký: mẩu
+  *"chưa hiểu" Slide 11* — Pain vs Consequence — chỉ được mở **4 giây**. Với người đã hiểu sẵn
+  thì mẩu đó không có gì để hỏi, nên việc bỏ qua nó **không nói được gì** về việc mẩu "chưa
+  hiểu" có phải trọng tâm hay không.
+- **Không phải mọi khoảng lặng đều là "đang bí".** Bốn phút đầu đảo option 10 lần, và 7 phút 36
+  giây trên Option C không thao tác — nhật ký không cho biết đó là đọc kỹ, cân nhắc, hay nói
+  chuyện với người ngồi cạnh. Cộng lại là phần lớn thời lượng buổi test **không có dữ liệu
+  hành vi**. Chỉ người facilitate mới điền được.
+- **Không hỏi được câu trade-off cuối buổi.** Câu nguyên văn có nói *"thì hay hơn"* nhưng không
+  nói **đổi lại mất gì**. Gộp C với D nghĩa là AI vẫn soạn sẵn cả gói (chi phí đọc của C) cộng
+  thêm một lớp chọn mục — chưa biết tester có chịu cái giá đó không.
+- Hai ý còn lại (rút Option B xuống hai nút; cơ chế AI tự nêu chỗ thiếu rồi hỏi lại) vẫn là
+  **thuật lại**, chưa có nguyên văn.
+- Chưa hỏi được tên tester.

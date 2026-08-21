@@ -37,9 +37,9 @@ phải do người ngồi cạnh nhớ lại. Xem mục 7.
 
 | Mục | Nội dung |
 |---|---|
-| Tester | ……  *(chưa ghi)* |
-| Ngày | ……  *(chưa ghi)* |
-| Có context liên quan | ……  *(chưa hỏi hoặc chưa ghi)* |
+| Tester | anh Coach Lab — **chưa kịp hỏi tên**. Ngoài nhóm, là HS/SV nên đúng chân dung target user |
+| Ngày | 19/08/2026 |
+| Có context liên quan | Có — cũng là sinh viên, vẫn đang đi học và ôn bài |
 | Thứ tự mở option | D → C → A → B, sau đó đảo qua lại nhiều lần |
 | Tổng thời lượng | 10:09:38 → 10:22:57 — **13 phút 19 giây** |
 | Nhật ký hành vi | **Có.** Nguyên văn ở [phụ lục](#phụ-lục--nhật-ký-hành-vi-nguyên-văn) |
@@ -54,7 +54,7 @@ phải do người ngồi cạnh nhớ lại. Xem mục 7.
 | # | Tester nói / đề xuất | Về option nào | Dạng gì |
 |---|---|---|---|
 | T1 | Nếu làm theo B thì giảm giao diện xuống còn **hai nút**: *giữ thẻ* hoặc *sửa thẻ* | B | Đề xuất thay đổi giao diện |
-| T2 | Thích hơn một phương án **gộp C với D** | C, D | Phát biểu sở thích |
+| T2 | Thích hơn một phương án **gộp C với D**. Nguyên văn: *"option C cũng hay đấy, nhưng anh nghĩ kết hợp thêm với hướng mở rộng thêm hướng chọn mục để mở giống option D thì hay hơn"* | C, D | Phát biểu sở thích kèm đề xuất thiết kế |
 | T3 | Cơ chế mong muốn: sau khi AI tổng hợp, **AI tự xác định chỗ nào chưa logic hoặc thiếu thông tin**, **hỏi lại người dùng**, rồi **liệt kê thành từng mục**; người dùng bấm vào một mục thì AI **giải thích tường minh** phần đó | C + D | Đề xuất cơ chế |
 
 ---
